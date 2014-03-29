@@ -18,11 +18,15 @@ get_header(); ?>
 				while ( have_posts() ) : the_post();
 		?>
 		<div class="blog-post-teaser-container">	
-			<h2><?php the_title(); ?></h2>
+			
+			<a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
+			<span><?php echo get_the_date(); ?></span>
+			<a href="<?php the_permalink() ?>">
 			<img class="blog-teaser-image" 
 				src="<?php $id = get_the_ID();
 				echo get_post_meta($id, '_zach_post_image', TRUE); ?>"
 			>
+			</a>
 			<div class="blog-teaser-text"><?php 
 				$content = get_the_content(); 
 				$content_limited = substr($content, 0, -2300) . '.....';

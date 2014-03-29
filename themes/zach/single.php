@@ -14,27 +14,22 @@ get_header(); ?>
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
-
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-
-					// Previous/next post navigation.
-					twentyfourteen_post_nav();
-
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
 			?>
+			<div class="blog-post-wrapper">
+				<h1><?php the_title(); ?></h1>
+				<p class="blog-post-date"><?php the_date(); ?></p>
+				<img class="blog-post-image" 
+					src="<?php $id = get_the_ID();
+					echo get_post_meta($id, '_zach_post_image', TRUE); ?>"
+				>
+				<div class="blog-post-content">
+					<?php the_content(); ?>
+				</div>
+
+				<?php endwhile; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar( 'content' );
 get_sidebar();
 get_footer();

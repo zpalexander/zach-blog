@@ -603,6 +603,11 @@ ul li.active-nav {
 	margin-top: 0;
 }
 
+.blog-post-teaser-container span {
+	float: right;
+	margin-top: -35px;
+}
+
 .blog-teaser-image {
 	float: left;
 	display: inline;
@@ -612,6 +617,30 @@ ul li.active-nav {
 
 .blog-teaser-text {
 	padding-left: 35%;
+}
+
+.blog-post-wrapper {
+	padding: 30px;
+	margin-left: 21.5%;	
+}
+
+.blog-post-wrapper h1 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.blog-post-date {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.blog-post-image {
+	width: 100%;
+	height: auto;
+}
+
+.blog-post-content {
+	margin-top: 40px;
 }
 
 

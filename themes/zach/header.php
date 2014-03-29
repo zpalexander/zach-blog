@@ -57,7 +57,7 @@
 							Photos
 						</li>
 					<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" rel="blog">
-						<li <?php if (is_home()) echo 'class="active-nav"'; ?>>
+						<li <?php if (is_home() || is_single()) echo 'class="active-nav"'; ?>>
 							Blog
 						</li>
 					</a>

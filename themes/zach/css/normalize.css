@@ -68,10 +68,12 @@ body {
 
 a {
 	text-decoration: none;
+	color: #000;
 }
 
 a:focus {
 	outline: thin dotted;
+	color: #FFF
 }
 
 a:hover,
@@ -81,7 +83,7 @@ a:active {
 
 a:active,
 a:hover {
-	color: #41a62a;
+	color: #FFF;
 }
 
 h1,
@@ -418,13 +420,11 @@ hr {
  * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-	background: #24890d;
 	color: #fff;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #24890d;
 	color: #fff;
 	text-shadow: none;
 }
