@@ -600,21 +600,27 @@ ul li.active-nav {
 }
 
 .blog-post-teaser-container {
-	padding: 30px;
+	padding: 50px 30px;
 	background: rgba(0, 0, 0, 0.75);
-	border-bottom: 20px solid #000000;
+	border-bottom: 10px solid #000000;
 	overflow: hidden;
 	width: ;
 }
 
 .blog-post-teaser-container h2 {
 	margin-top: 0;
+	margin-bottom: 25px;
+	color: #FFFFFF;
+}
+
+.blog-post-teaser-container h2:hover {
+	color: #FFF;
 }
 
 .blog-post-teaser-container span {
 	float: right;
-	margin-top: -35px;
-	color: #DEDEDE;
+	margin-top: -50px;
+	color: #FFFFFF;
 }
 
 .blog-teaser-image {
@@ -626,31 +632,40 @@ ul li.active-nav {
 
 .blog-teaser-text {
 	padding-left: 35%;
-	color: #DEDEDE;
+	color: #FFFFFF;
+}
+
+.blog-teaser-text a {
+	color: #FFFFFF;
 }
 
 .blog-post-wrapper {
 	padding: 30px;
 	margin-left: 21.5%;	
+	background: rgba(0, 0, 0, 0.75);
 }
 
 .blog-post-wrapper h1 {
 	text-align: center;
 	margin-bottom: 0;
+	color: #FFFFFF;
 }
 
 .blog-post-date {
 	text-align: center;
 	margin-bottom: 20px;
+	color: #FFFFFF;
 }
 
 .blog-post-image {
 	width: 100%;
 	height: auto;
+	margin-top: 20px;
 }
 
 .blog-post-content {
 	margin-top: 40px;
+	color: #FFFFFF;
 }
 
 
@@ -663,41 +678,47 @@ ul li.active-nav {
 	background: rgba(0, 0, 0, 0.75);
 }
 
-.photo-container {
-}
 
-.photo-container .photo {
+ .photo {
 	display: inline-block;
 	width: 300px;
 	margin: 1%;
 	cursor: pointer;
 }
 
-.photo-container .photo .photo-info {
+ .photo .photo-info {
 	display: none;
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.75);
-	color: #DEDEDE;
+	background: rgba(0, 0, 0, 0.8);
+	color: #FFFFFF;
 }
 
-.photo-container .photo .photo-info h4 {
+ .photo .photo-info h4 {
 	position: absolute;
 	top: 40%;
 	width: 100%;
 	text-align: center;
+	text-transform: uppercase;
 }
 
-.photo-container .photo .photo-info span {
+ .photo .photo-info .photo-thumb-date {
 	position: absolute;
 	top: 5px;
 	right: 10px;	
 }
 
-.photo-container .photo img {
+ .photo .photo-info .photo-thumb-location {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	text-transform: uppercase;
+}
+
+ .photo img {
 	width: 100%;
 	height: auto;
 }
@@ -712,11 +733,12 @@ ul li.active-nav {
 	padding-top: 56px;
 	overflow: visible;
 	z-index: 100;
-	background: rgba(0, 0, 0, 0.9);
+	background: #000;
 }
 
 .fullscreen-photo img {
 	display: block;
+	position: relative;
 	margin: 0 auto;
 }
 
@@ -1387,6 +1409,7 @@ a.post-thumbnail:hover {
  }
 
  .home .social-media-link {
+ 	display: none;
  	opacity: .5;
  	position: absolute;
  	right: 0;
@@ -1706,6 +1729,7 @@ a.post-thumbnail:hover {
 
 .sidebar-content {
 	margin-left: 30px;
+	margin-top: 15px;
 }
 
 .blog-categories-header {

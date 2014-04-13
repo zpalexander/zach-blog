@@ -29,7 +29,7 @@ get_header(); ?>
 			</a>
 			<div class="blog-teaser-text"><?php 
 				$content = get_the_content(); 
-				$content_limited = substr($content, 0, -2300) . '.....';
+				$content_limited = substr($content, 0, -2300) . '<a href="' . get_permalink() . '">.....</a>';
 				echo $content_limited;
 			?></p>
 		</div>

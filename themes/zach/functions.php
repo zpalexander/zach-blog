@@ -27,7 +27,7 @@ function zach_scripts_styles() {
 	// Enqueue isotope on photos page
 	if ( is_page( 'photos' ) ) {
 		wp_enqueue_script( 'isotope', get_template_directory_uri() . "/js/jquery.isotope.min.js", array( 'jquery' ) );
-		wp_enqueue_script( 'photos-script', get_template_directory_uri() . "/js/photos.js", array( 'jquery', 'isotope'));
+		wp_enqueue_script( 'photos-script', get_template_directory_uri() . "/js/photos.js", array( 'jquery', 'isotope') );
 	}
 }
 

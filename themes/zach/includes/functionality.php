@@ -94,13 +94,20 @@ function zach_metaboxes( array $meta_boxes ) {
 		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
 		'fields' => array(
 			array(
-				'name' 	=> __( "Put 'er here", 'cmb' ),
+				'name' 	=> __( "Image file", 'cmb' ),
 				'desc' 	=> __( '', 'cmb' ),
 				'id' 	=> $prefix . 'photo_file',
 				'type' 	=> 'file',
+			),
+			array(
+				'name' 	=> __( "Photo location", 'cmb' ),
+				'desc'	=> __( '', 'cmb' ),
+				'id'	=> $prefix . 'photo_location',
+				'type'	=> 'text',
 			)
 		)
 	);
+
 
 
 	return $meta_boxes;

@@ -8,7 +8,7 @@ get_header(); ?>
 
 <section id="primary" class="content-area">
 	<div id="content" class="photo-content" role="main">
-		<div class="photo-container">
+		<!-- <div class="photo-container"> -->
 		<?php 
 			$query_args = array(
 				'posts_per_page'   => 12,
@@ -30,12 +30,15 @@ get_header(); ?>
 					<div class="photo">
 						<div class="photo-info">
 							<h4><?php echo $photo_post->post_title ?></h4>
-							<span>
+							<span class="photo-thumb-date">
 								<?php 
 									$raw_date = $photo_post->post_date; 
 									$refined_date = explode(' ', $raw_date);
 									echo $refined_date[0];
 								?>
+							</span>
+							<span class="photo-thumb-location">
+								<?php echo get_post_meta($photo_post->ID, '_zach_photo_location', TRUE); ?>
 							</span>
 						</div>
 						<img src="<?php echo get_post_meta($photo_post->ID, '_zach_photo_file', TRUE) ?>">
@@ -45,7 +48,7 @@ get_header(); ?>
 			}
 		?>
 			
-		</div>
+		<!-- </div> -->
 	</div>
 	<div class="fullscreen-photo"></div>
 </section>
