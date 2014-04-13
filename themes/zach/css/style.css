@@ -601,7 +601,7 @@ ul li.active-nav {
 
 .blog-post-teaser-container {
 	padding: 30px;
-	background: #979EA1;	
+	background: rgba(0, 0, 0, 0.75);
 	border-bottom: 20px solid #000000;
 	overflow: hidden;
 	width: ;
@@ -614,6 +614,7 @@ ul li.active-nav {
 .blog-post-teaser-container span {
 	float: right;
 	margin-top: -35px;
+	color: #DEDEDE;
 }
 
 .blog-teaser-image {
@@ -625,6 +626,7 @@ ul li.active-nav {
 
 .blog-teaser-text {
 	padding-left: 35%;
+	color: #DEDEDE;
 }
 
 .blog-post-wrapper {
@@ -657,6 +659,8 @@ ul li.active-nav {
 	width: 80%;
 	margin: 0 auto;
 	padding-top: 50px;
+	padding: 50px 90px 0;
+	background: rgba(0, 0, 0, 0.75);
 }
 
 .photo-container {
@@ -667,9 +671,30 @@ ul li.active-nav {
 	float: left;
 	width: 300px;
 	padding: 10px;
+	cursor: pointer;
 }
 
 .photo-container .photo img {
+	width: 100%;
+	height: auto;
+}
+
+.fullscreen-photo {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 56px;
+	overflow: visible;
+	z-index: 100;
+	background: rgba(0, 0, 0, 0.9);
+}
+
+.fullscreen-photo img {
+	display: block;
+	margin: 0 auto;
 }
 
 
