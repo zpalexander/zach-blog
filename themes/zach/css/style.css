@@ -664,7 +664,6 @@ ul li.active-nav {
 }
 
 .photo-container {
-
 }
 
 .photo-container .photo {
@@ -1361,6 +1360,24 @@ a.post-thumbnail:hover {
 
  .home .sidebar {
  	display: none;
+ }
+
+ .home .twitter {
+ 	position: absolute;
+ 	top: 40px;
+ 	right: 1%;	
+ }
+
+ .home .linkedin {
+ 	position: absolute;
+ 	top: 200px;
+ 	right: 1%;
+ }
+
+ .home .email {
+ 	position: absolute;
+ 	top: 360px;
+ 	right: 1%;
  }
 
 
