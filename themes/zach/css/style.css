@@ -363,6 +363,11 @@ span + .edit-link:before,
 	width: 100%;
 }
 
+#content {
+	margin-top: 56px;
+}
+
+
 
 /**
  * 4.0 Header
@@ -587,6 +592,9 @@ ul li.active-nav {
 	margin: 57px auto 0;
 }
 
+
+/* Blog */
+
 .blog-page-content {
 	margin: 57px 0 0% 20%;
 }
@@ -641,6 +649,27 @@ ul li.active-nav {
 
 .blog-post-content {
 	margin-top: 40px;
+}
+
+
+/* Photo */
+.photo-content {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.photo-container {
+
+}
+
+.photo-container .photo {
+	float: left;
+	width: 300px;
+	padding: 10px;
+}
+
+.photo-container .photo img {
 }
 
 
