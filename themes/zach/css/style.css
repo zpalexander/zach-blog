@@ -667,10 +667,34 @@ ul li.active-nav {
 }
 
 .photo-container .photo {
-	float: left;
+	display: inline-block;
 	width: 300px;
-	padding: 10px;
+	margin: 1%;
 	cursor: pointer;
+}
+
+.photo-container .photo .photo-info {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.75);
+	color: #DEDEDE;
+}
+
+.photo-container .photo .photo-info h4 {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+}
+
+.photo-container .photo .photo-info span {
+	position: absolute;
+	top: 5px;
+	right: 10px;	
 }
 
 .photo-container .photo img {
@@ -1362,22 +1386,26 @@ a.post-thumbnail:hover {
  	display: none;
  }
 
- .home .twitter {
+ .home .social-media-link {
+ 	opacity: .5;
  	position: absolute;
+ 	right: 0;
+ }
+
+ .home .social-media-link:hover {
+ 	opacity: 1;
+ }
+
+ .home .twitter {
  	top: 40px;
- 	right: 1%;	
  }
 
  .home .linkedin {
- 	position: absolute;
  	top: 200px;
- 	right: 1%;
  }
 
  .home .email {
- 	position: absolute;
  	top: 360px;
- 	right: 1%;
  }
 
 

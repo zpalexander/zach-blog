@@ -28,6 +28,16 @@ get_header(); ?>
 				foreach($photos_array as $photo_post) {
 		?>
 					<div class="photo">
+						<div class="photo-info">
+							<h4><?php echo $photo_post->post_title ?></h4>
+							<span>
+								<?php 
+									$raw_date = $photo_post->post_date; 
+									$refined_date = explode(' ', $raw_date);
+									echo $refined_date[0];
+								?>
+							</span>
+						</div>
 						<img src="<?php echo get_post_meta($photo_post->ID, '_zach_photo_file', TRUE) ?>">
 					</div>
 		<?php

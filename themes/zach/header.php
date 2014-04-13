@@ -61,9 +61,6 @@
 							Blog
 						</li>
 					</a>
-					<li>
-						Contact
-					</li>
 				</ul>
 			</nav>
 		</div>
