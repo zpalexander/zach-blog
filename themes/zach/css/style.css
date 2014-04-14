@@ -23,6 +23,12 @@ This theme, like WordPress, is licensed under the GPL.
  */
 
 
+ @font-face {
+  font-family: 'Noto';
+  src: url('/fonts/noto-sans/NotoSans-Italic.ttf') format('ttf');
+}
+
+
 
 
 
@@ -683,7 +689,7 @@ ul li.active-nav {
 .photo-content {
 	width: 80%;
 	margin: 60px auto 0!important;
-	padding: 0 90px 0;
+	padding: 0;
 	background: rgba(0, 0, 0, 0.6);
 	border-style: solid;
 	border-width: 10px;
@@ -696,9 +702,15 @@ ul li.active-nav {
 
  .photo {
 	display: inline-block;
-	width: 300px;
+	width: 96%;
 	margin: 1%;
 	cursor: pointer;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #000;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
 }
 
  .photo .photo-info {
@@ -710,6 +722,8 @@ ul li.active-nav {
 	right: 0;
 	background: rgba(0, 0, 0, 0.8);
 	color: #FFFFFF;
+	font-family: Noto;
+	font-size: .75em;
 }
 
  .photo .photo-info h4 {
@@ -718,6 +732,7 @@ ul li.active-nav {
 	width: 100%;
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: 100;
 }
 
  .photo .photo-info .photo-thumb-date {
@@ -2070,14 +2085,18 @@ a.post-thumbnail:hover {
 
 }
 
-@media screen and (min-width: 846px) {
+@media screen and (min-width: 1012px) {
 	.photo {
-		width: 350px;
+		width: 380px;
+	}
+
+	.photo-content {
+		padding: 0 90px 0;
 	}
 	
 }
 
-@media screen and (min-width: 1008px) {
+@media screen and (min-width: 1036px) {
 	.photo {
 		width: 390px;
 	}	
@@ -2097,7 +2116,7 @@ a.post-thumbnail:hover {
 
 @media screen and (min-width: 1218px) {
 	.photo {
-		width: 300px;
+		width: 290px;
 	}
 	
 }
