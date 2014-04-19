@@ -607,11 +607,10 @@ ul li.active-nav {
 
 .blog-post-teaser-container {
 	display: none;
-	padding: 50px 30px;
+	padding: 40px 30px 20px 30px;
 	margin: 10px 0;
 	background: rgba(0, 0, 0, 0.6);
-	border-style: solid; 
-	border-color: #121212;
+	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
@@ -626,15 +625,25 @@ ul li.active-nav {
 }
 
 .blog-post-teaser-container h2:hover {
-	color: #FFF;
+	color: #2B2B2B;
 }
 
 .blog-post-teaser-container span {
 	float: right;
 	margin-top: -50px;
-	color: #FFFFFF;
 	font-family: Noto;
 }
+
+.blog-teaser-tags {
+	margin: 20px 0 5px 0;
+}
+
+.blog-teaser-tags img {
+	height: 20px;
+	width: auto;
+	display: inline;
+}
+
 
 .blog-teaser-image {
 	float: left;
@@ -651,12 +660,16 @@ ul li.active-nav {
 
 .blog-teaser-text {
 	padding-left: 35%;
-	color: #FFFFFF;
+	color: #FFF;
 	font-family: Noto;
 }
 
 .blog-teaser-text a {
-	color: #FFFFFF;
+	color: #FFF;
+}
+
+.blog-teaser-text a:hover {
+	color: #2B2B2B;
 }
 
 .blog-post-wrapper {
@@ -664,8 +677,7 @@ ul li.active-nav {
 	padding: 30px;
 	margin: 10px 0  10px 21.5%;	
 	background: rgba(0, 0, 0, 0.6);
-	border-style: solid;
-	border-color: #121212;
+	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
 	border-radius: 20px;
 	-moz-border-radius: 20px;

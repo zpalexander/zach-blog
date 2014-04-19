@@ -27,19 +27,22 @@ get_header(); ?>
 				echo get_post_meta($id, '_zach_post_image', TRUE); ?>"
 			>
 			</a>
-			<div class="blog-teaser-text"><?php 
+			<div class="blog-teaser-text">
+			<?php 
 				$content = get_the_content(); 
 				$content_limited = substr($content, 0, -2300) . '<a href="' . get_permalink() . '">.....</a>';
 				echo $content_limited;
-			?></p>
-		</div>
+			?>
+			</div>
+			<p class="blog-teaser-tags">
+				<img src="<?php echo get_stylesheet_directory_uri() ?>/images/tag-icon.png ?>">
+				Android, CSS, Drupal, China
+			</p>
 		</div>
 
 		<?php
 				endwhile;
 				// Previous/next post navigation.
-
-			else :
 			endif;
 		?>
 
