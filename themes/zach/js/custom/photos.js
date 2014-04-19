@@ -1,13 +1,13 @@
 (function($) {
 
-	var initIsotope = function() {
-		$( '.photo-content' ).isotope({
-  			// options
-  			itemSelector : '.photo',
-  			layoutMode : 'masonry',
-  			transitionDuration: '1.0s',
-		});
-	};
+	// var initIsotope = function() {
+	// 	$( '.photo-content' ).isotope({
+ //  			// options
+ //  			itemSelector : '.photo',
+ //  			layoutMode : 'masonry',
+ //  			transitionDuration: '1.0s',
+	// 	});
+	// };
 
 	var openFullScreenImage = function() {
 		var imageSource = $('img', this).attr('src');
@@ -34,7 +34,7 @@
 
 	$(window).load( function() {
 		// Initialize the isotope script
-		initIsotope();
+		//initIsotope();
 
 		// Fade in the photos
 		$( '.photo' ).fadeIn(1000).css('display', 'inline-block');

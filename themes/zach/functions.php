@@ -4,6 +4,8 @@
  * @package Zach_Alexander
  */
 
+
+
  /**
   * Custom metabox setup.
   *
@@ -12,7 +14,12 @@
  require(dirname( __FILE__ ).'/includes/functionality.php');
 
 
-// Enqueue scripts and stylesheets
+
+/**
+ *
+ * Enqueue scripts and stylesheets
+ *
+ */
 add_action( 'wp_enqueue_scripts', 'zach_scripts_styles' );
 function zach_scripts_styles() {
 	// Enqueue main stylesheet
@@ -26,8 +33,8 @@ function zach_scripts_styles() {
 
 	// Enqueue isotope on photos page
 	if ( is_page( 'photos' ) ) {
-		wp_enqueue_script( 'isotope', get_template_directory_uri() . "/js/contrib/jquery.isotope.min.js", array( 'jquery' ) );
-		wp_enqueue_script( 'photos-script', get_template_directory_uri() . "/js/custom/photos.js", array( 'jquery', 'isotope') );
+		//wp_enqueue_script( 'isotope', get_template_directory_uri() . "/js/contrib/jquery.isotope.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'photos-script', get_template_directory_uri() . "/js/custom/photos.js", array( 'jquery'/*, 'isotope'*/) );
 	}
 
 	if ( is_home() ) {

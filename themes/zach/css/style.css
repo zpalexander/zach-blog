@@ -644,9 +644,9 @@ ul li.active-nav {
 	border-style: solid;
 	border-width: 2px;
 	border-color: #121212;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 .blog-teaser-text {
@@ -692,9 +692,9 @@ ul li.active-nav {
 	border-style: solid;
 	border-width: 2px;
 	border-color: #121212;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 .blog-post-content {
@@ -719,16 +719,17 @@ ul li.active-nav {
 
 
  .photo {
+ 	position: relative;
 	display: none;
-	width: 96%;
-	margin: 1%;
+	width: 47.5%;
+	margin: 1% .5% 1% .5%;
 	cursor: pointer;
 	border-style: solid;
 	border-width: 4px;
 	border-color: #121212;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
  .photo .photo-info {
@@ -2099,8 +2100,10 @@ a.post-thumbnail:hover {
 	
 }
 
-@media screen and (min-width: 783px) {
-
+@media screen and (min-width: 980px) {
+	.photo {
+		width: 31%;
+	}
 }
 
 @media screen and (min-width: 985px) {
@@ -2115,20 +2118,10 @@ a.post-thumbnail:hover {
 }
 
 @media screen and (min-width: 1012px) {
-	.photo {
-		width: 380px;
-	}
-
-	.photo-content {
-		padding: 0 90px 0;
-	}
 	
 }
 
 @media screen and (min-width: 1036px) {
-	.photo {
-		width: 390px;
-	}	
 	
 }
 
@@ -2138,22 +2131,13 @@ a.post-thumbnail:hover {
 }
 
 @media screen and (min-width: 1140px) {
-	.photo {
-		width: 430px;
-	}	
 }
 
 @media screen and (min-width: 1218px) {
-	.photo {
-		width: 290px;
-	}
 	
 }
 
 @media screen and (min-width: 1260px) {
-	.photo {
-		width: 300px;
-	}
 	
 }
 
