@@ -1,14 +1,5 @@
 (function($) {
 
-	// var initIsotope = function() {
-	// 	$( '.photo-content' ).isotope({
- //  			// options
- //  			itemSelector : '.photo',
- //  			layoutMode : 'masonry',
- //  			transitionDuration: '1.0s',
-	// 	});
-	// };
-
 	var openFullScreenImage = function() {
 		var imageSource = $('img', this).attr('src');
 		var imageTag = '<img src="'+imageSource+'"></img>';
@@ -33,9 +24,6 @@
 
 
 	$(window).load( function() {
-		// Initialize the isotope script
-		//initIsotope();
-
 		// Fade in the photos
 		$( '.photo' ).fadeIn(1000).css('display', 'inline-block');
 

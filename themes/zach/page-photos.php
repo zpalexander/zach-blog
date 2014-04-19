@@ -8,7 +8,6 @@ get_header(); ?>
 
 <section id="primary" class="content-area">
 	<div id="content" class="photo-content" role="main">
-		<!-- <div class="photo-container"> -->
 		<?php 
 			$query_args = array(
 				'posts_per_page'   => 12,
@@ -48,7 +47,6 @@ get_header(); ?>
 			}
 		?>
 			
-		<!-- </div> -->
 	</div>
 	<div class="fullscreen-photo"></div>
 </section>
