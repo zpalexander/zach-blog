@@ -1,10 +1,9 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * This is the single post page
  *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @package Zach_Alexander
+ *
  */
 
 get_header(); ?>
@@ -18,6 +17,16 @@ get_header(); ?>
 			<div class="blog-post-wrapper">
 				<h1><?php the_title(); ?></h1>
 				<p class="blog-post-date"><?php the_date(); ?></p>
+				<?php 
+					$categories = wp_get_post_categories(get_the_ID(), array( 'fields' => 'names' ));
+					if ( $categories[0] != 'Uncategorized' ) {
+						echo '<p class="blog-tags">';
+							echo '<img src="' . get_stylesheet_directory_uri() . '/images/tag-icon.png ?>">';
+							foreach ( $categories as $category )
+								echo '<span class="blog-post-category">' . $category . '</span>';
+						echo '</p>';
+					}
+				?>
 				<img class="blog-post-image" 
 					src="<?php $id = get_the_ID();
 					echo get_post_meta($id, '_zach_post_image', TRUE); ?>"

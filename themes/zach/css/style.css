@@ -622,15 +622,21 @@ ul li.active-nav {
 	margin-top: -5px;
 	margin-bottom: 25px;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .blog-post-teaser-container h2:hover {
 	color: #2B2B2B;
 }
 
-.blog-post-teaser-container span {
+.blog-post-teaser-container .blog-teaser-date {
 	float: right;
 	margin-top: -50px;
+	text-transform: uppercase;
+}
+
+.blog-post-category {
+	margin-left: 8px;
 	font-family: Noto;
 }
 
@@ -639,7 +645,7 @@ ul li.active-nav {
 }
 
 .blog-teaser-tags img {
-	height: 20px;
+	height: 15px;
 	width: auto;
 	display: inline;
 }
@@ -688,13 +694,24 @@ ul li.active-nav {
 	text-align: center;
 	margin-bottom: 0;
 	color: #FFFFFF;
+	text-transform: uppercase;
 }
 
 .blog-post-date {
 	text-align: center;
-	margin-bottom: 20px;
-	color: #FFFFFF;
-	font-family: Noto;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.blog-tags {
+	margin: 0;
+	text-align: center;
+}
+
+.blog-tags img {
+	height: 15px;
+	width: auto;
+	display: inline;
 }
 
 .blog-post-image {
