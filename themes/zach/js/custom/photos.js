@@ -4,7 +4,7 @@
 		$( '.photo-content' ).isotope({
   			// options
   			itemSelector : '.photo',
-  			layoutMode : 'fitRows',
+  			layoutMode : 'masonry',
   			transitionDuration: '1.0s',
 		});
 	};
@@ -29,12 +29,15 @@
 
 	var hideInfo = function() {
 		$(this).find( '.photo-info' ).fadeOut(200);
-
 	}
 
 
 	$(window).load( function() {
+		// Initialize the isotope script
 		initIsotope();
+
+		// Fade in the photos
+		$( '.photo' ).fadeIn(1000).css('display', 'inline-block');
 
 		// Show photo info on hover
 		$( '.photo' ).mouseenter( showInfo ).mouseleave( hideInfo );
