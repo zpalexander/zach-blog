@@ -47,12 +47,7 @@ function zach_scripts_styles() {
 
 
 function blog_posts_query($filter) {
-	//if ($filter)
 	$query = new WP_Query( "cat=$filter" );
-	//else
-	//	$query = new WP_Query();
-
 	return $query;
-
 }
 

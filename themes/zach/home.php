@@ -37,12 +37,16 @@ get_header(); ?>
 				echo $content_limited;
 			?>
 			</div>
-			<?php $categories = wp_get_post_categories(get_the_ID(), array( 'fields' => 'names' ));
+			<?php $categories = wp_get_post_categories(get_the_ID());
 			if ( $categories[0] != 'Uncategorized' ) {
 				echo '<p class="blog-teaser-tags">';
 					echo '<img src="' . get_stylesheet_directory_uri() . '/images/tag-icon.png ?>">';
-					foreach ( $categories as $category )
-						echo '<span class="blog-post-category">' . $category . '</span>';
+					foreach ( $categories as $category ) {
+						$link = get_site_url() . '/blog?cat=' . $category;
+						echo "<a href='$link' >";
+						echo '<span class="blog-post-category">' . get_category($category)->name . '</span>';
+						echo "</a>";
+					}
 				echo '</p>';
 			}
 			?>

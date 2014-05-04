@@ -11,6 +11,12 @@
 	<div class="sidebar-content">
 		<h2 class="blog-categories-header">Categories</h2>
 		<ul class="blog-categories-list list-reset">
+			<!-- All posts link -->
+			<li>
+				<a href="<?php echo get_site_url() . '/blog'; ?>">
+					All Posts
+				</a>
+			</li>
 			<?php
 				$category_array = get_categories();
 				foreach ($category_array as $category) {
