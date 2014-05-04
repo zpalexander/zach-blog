@@ -11,17 +11,23 @@ This theme, like WordPress, is licensed under the GPL.
 /**
  * Table of Contents:
  *
- * 1.0 - Reset
+ * 1.0 - Fonts
  * 2.0 - Repeatable Patterns
  * 3.0 - Basic Structure
  * 4.0 - Header
  * 5.0 - Navigation
+ * 6.0 - Blog
+ * 7.0 - Photo
  * 8.0 - Footer
  * 11.0 - Media Queries
  * 12.0 - Print
  * -----------------------------------------------------------------------------
  */
 
+/**
+ * 1.0 Fonts
+ * -----------------------------------------------------------------------------
+ */
 
  @font-face {
   font-family: 'Noto';
@@ -567,7 +573,7 @@ ul li.active-nav {
 
 
 /**
- * 6.0 Content
+ * 6.0 Blog
  * -----------------------------------------------------------------------------
  */
 
@@ -733,6 +739,12 @@ ul li.active-nav {
 }
 
 
+/**
+ * 7.0 Photo
+ * -----------------------------------------------------------------------------
+ */
+
+
 /* Photo */
 .photo-content {
 	width: 80%;
@@ -821,28 +833,6 @@ ul li.active-nav {
 	margin: 0 auto;
 }
 
-
-/**
- * 6.1 Post Thumbnail
- * -----------------------------------------------------------------------------
- */
-
-.post-thumbnail {
-	background: #b2b2b2 url(images/pattern-light.svg) repeat fixed;
-	display: block;
-	position: relative;
-	width: 100%;
-	z-index: 0;
-}
-
-a.post-thumbnail:hover {
-	background-color: #999;
-}
-
-.full-width .post-thumbnail img {
-	display: block;
-	margin: 0 auto;
-}
 
 
 /**
@@ -1487,11 +1477,18 @@ a.post-thumbnail:hover {
  	display: none;
  }
 
+ .home .social-media-container {
+ 	position: absolute;
+ 	right: 0;
+ }
+
+ .home .social-media-container li {
+ 	margin-bottom: 50px;
+ }
+
  .home .social-media-link {
  	display: none;
  	opacity: .5;
- 	position: absolute;
- 	right: 0;
  }
 
  .home .social-media-link:hover {
@@ -1499,15 +1496,12 @@ a.post-thumbnail:hover {
  }
 
  .home .twitter {
- 	top: 40px;
  }
 
  .home .linkedin {
- 	top: 200px;
  }
 
  .home .email {
- 	top: 360px;
  }
 
 

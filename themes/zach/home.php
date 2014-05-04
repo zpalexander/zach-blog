@@ -12,10 +12,13 @@ get_header(); ?>
 		<div id="content" class="blog-page-content" role="main">
 
 		<?php
-
-			if ( have_posts() ) :
+			$category = isset($_GET['cat']) ? $_GET['cat'] : NULL;
+			//var_dump($category);
+			//die();
+			$the_query = blog_posts_query($category);
+			if ( $the_query->have_posts() ) :
 				// Start the Loop.
-				while ( have_posts() ) : the_post();
+				while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		<div class="blog-post-teaser-container">	
 			

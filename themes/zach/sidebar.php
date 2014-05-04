@@ -16,9 +16,12 @@
 				foreach ($category_array as $category) {
 			?>
 
-			<li><?php echo $category->name ?></li>
-			<?php }
-			?>
+			<li>
+				<a href="<?php echo get_site_url() . '/blog?cat=' . $category->term_id  ?>"> 
+					<?php echo $category->name ?>
+				</a>
+			</li>
+			<?php } ?>
 		</ul>
 	</div>
 </div><!-- #secondary -->

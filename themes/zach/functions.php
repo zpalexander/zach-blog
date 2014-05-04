@@ -33,7 +33,7 @@ function zach_scripts_styles() {
 
 	// Enqueue isotope on photos page
 	if ( is_page( 'photos' ) ) {
-		wp_enqueue_script( 'photos-script', get_template_directory_uri() . "/js/custom/photos.js", array( 'jquery'/*, 'isotope'*/) );
+		wp_enqueue_script( 'photos', get_template_directory_uri() . "/js/custom/photos.js", array( 'jquery' ) );
 	}
 
 	if ( is_home() ) {
@@ -45,4 +45,14 @@ function zach_scripts_styles() {
 	}
 }
 
+
+function blog_posts_query($filter) {
+	//if ($filter)
+	$query = new WP_Query( "cat=$filter" );
+	//else
+	//	$query = new WP_Query();
+
+	return $query;
+
+}
 
