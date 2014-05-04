@@ -35,9 +35,6 @@ This theme, like WordPress, is licensed under the GPL.
 }
 
 
-
-
-
 /**
  * 2.0 Repeatable Patterns
  * -----------------------------------------------------------------------------
@@ -367,7 +364,7 @@ span + .edit-link:before,
  */
 
 .site {
-	background-color: #fff;
+	background-color: #121212;
 	position: relative;
 }
 
@@ -624,7 +621,7 @@ ul li.active-nav {
 	display: none;
 	padding: 40px 30px 20px 30px;
 	margin: 10px 0;
-	background: rgba(0, 0, 0, 0.6);
+	background: #6A6A68;
 	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
 	border-radius: 20px;
@@ -665,6 +662,10 @@ ul li.active-nav {
 	display: inline;
 }
 
+.block-teaser-tags a {
+	color: #6ABED8;
+}
+
 
 .blog-teaser-image {
 	float: left;
@@ -697,7 +698,7 @@ ul li.active-nav {
 	display: none;
 	padding: 30px;
 	margin: 10px 0  10px 0;	
-	background: rgba(0, 0, 0, 0.6);
+	background: #6A6A68;
 	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
 	border-radius: 20px;
@@ -758,10 +759,10 @@ ul li.active-nav {
 .photo-content {
 	width: 80%;
 	margin: 60px auto 0!important;
-	background: rgba(0, 0, 0, 0.6);
+	background: #6A6A68;
 	border-style: solid;
 	border-width: 10px;
-	border-color: #FFF;
+	border-color: #6A6A68;
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
@@ -1827,7 +1828,8 @@ ul li.active-nav {
 	text-transform: uppercase;
 }
 
-.blog-categories-list li {
+.blog-categories-list li a {
+	color: #6A6A68;
 }
 
 .blog-categories-list li:hover {
@@ -2165,6 +2167,10 @@ ul li.active-nav {
 		border-right: none;
 		padding: 10px 20px;
 		color: #FFF;
+	}
+
+	ul li.active-nav:hover {
+		border-bottom: 5px solid #FFF;
 	}
 
 	.header-hamburger {
