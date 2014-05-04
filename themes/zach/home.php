@@ -13,8 +13,6 @@ get_header(); ?>
 
 		<?php
 			$category = isset($_GET['cat']) ? $_GET['cat'] : NULL;
-			//var_dump($category);
-			//die();
 			$the_query = blog_posts_query($category);
 			if ( $the_query->have_posts() ) :
 				// Start the Loop.

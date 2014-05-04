@@ -27,6 +27,9 @@ function zach_scripts_styles() {
 	// Enqueue normalizing stylesheet
 	wp_enqueue_style('normalize-style', get_template_directory_uri() . "/css/normalize.css");
 
+	// Enqueue header script on all pages
+	wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/custom/nav.js", array( 'jquery' ) );
+
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'home', get_template_directory_uri() . "/js/custom/home.js", array( 'jquery' ) );
 	}

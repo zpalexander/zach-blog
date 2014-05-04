@@ -40,6 +40,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">
+			<img class="header-hamburger" src="<?php echo get_stylesheet_directory_uri() . '/images/hamburger-icon.png' ?>">
 			<div class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></div>
 
 			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
