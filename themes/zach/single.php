@@ -18,12 +18,16 @@ get_header(); ?>
 				<h1><?php the_title(); ?></h1>
 				<p class="blog-post-date"><?php the_date(); ?></p>
 				<?php 
-					$categories = wp_get_post_categories(get_the_ID(), array( 'fields' => 'names' ));
+					$categories = wp_get_post_categories(get_the_ID());
 					if ( $categories[0] != 'Uncategorized' ) {
 						echo '<p class="blog-tags">';
 							echo '<img src="' . get_stylesheet_directory_uri() . '/images/tag-icon.png ?>">';
-							foreach ( $categories as $category )
-								echo '<span class="blog-post-category">' . $category . '</span>';
+							foreach ( $categories as $category ) {
+								$filter_url = get_site_url() . '/blog?cat=' . $category;
+								echo "<a href='$filter_url'>";
+								echo '<span class="blog-post-category">' . get_category($category)->name . '</span>';
+								echo '</a>';
+							}
 						echo '</p>';
 					}
 				?>
