@@ -830,11 +830,43 @@ ul li.active-nav {
  	opacity: 1;
 }
 
-.about-info-container div {
- 	background: #FFF;
-	margin: 200px 0;
-	padding: 25px 200px;
+/* Parallax sections */
+
+.about-info-container .business-card {
+	background: #121212;
+
 }
+
+.about-info-container .business-card h2 {
+	color: #FFF;
+	padding-top: 15%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about-info-container .business-card p {
+	color: #FFF;
+	padding-top: 1.1%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about-info-container .primary-skills {
+
+}
+
+.about-info-container .experience {
+
+}
+
+.about-info-container .notable-projects {
+
+}
+
+.about-info-container .hobbies {
+
+}
+
 
 .about-background {
  	position: fixed;
