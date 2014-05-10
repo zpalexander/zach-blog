@@ -1,6 +1,14 @@
 (function($) {
 
+	var handleSocialMedia = function() {
+		var windowWidth = $( window ).width();
+		if ( ( windowWidth > 730 ) && ( ! $( '.social-media-container' ).is( ':visible' ) ) ) {
+			$('.social-media-container').show();
+		}
+	};
+
 	$(window).load(function() {
 		$( '.social-media-link' ).fadeIn(1200);
+		$( window ).resize(handleSocialMedia);
 	});
 })(jQuery);
