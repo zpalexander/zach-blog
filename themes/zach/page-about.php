@@ -11,6 +11,7 @@ get_header(); ?>
 
 		<section class="about-info-container">
 			<div class="business-card">
+				<img src="<?php echo get_stylesheet_directory_uri() . '/images/avatar.png';?>">
 				<h2>My name is Zach Alexander</h2>
 				<p>I'm a full-stack web developer</p>
 				<p>I live in Brooklyn, NY</p>
@@ -34,7 +35,7 @@ get_header(); ?>
 		</section>
 
 		<div class="about-background">
-			<img src="<?php echo get_stylesheet_directory_uri() . '/images/about-bg.jpg' ?>">
+			<img class="overlooking-water" src="<?php echo get_stylesheet_directory_uri() . '/images/overlooking-water.jpg' ?>">
 		</div>
 
 	</div>

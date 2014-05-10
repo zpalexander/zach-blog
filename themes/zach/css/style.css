@@ -822,7 +822,6 @@ ul li.active-nav {
 
 .about-info-container {
  	position: absolute;
- 	height: 5000px;
  	width: 100%;
  	margin: 0 auto;
  	background: none;
@@ -834,24 +833,36 @@ ul li.active-nav {
 
 .about-info-container .business-card {
 	background: #121212;
+}
 
+.about-info-container .business-card img {
+	display: block;
+	opacity: 0;
+	margin: 0 auto;
+	padding-top: 13%;
+	width: auto;
+	height: 50px;
 }
 
 .about-info-container .business-card h2 {
+	display: none;
 	color: #FFF;
-	padding-top: 15%;
+	padding-top: 1%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .about-info-container .business-card p {
+	display: none;
 	color: #FFF;
-	padding-top: 1.1%;
+	padding-top: 1%;
 	margin: 0 auto;
 	text-align: center;
 }
 
 .about-info-container .primary-skills {
+	margin-top: 600px;
+	background: #FFF;
 
 }
 
@@ -880,6 +891,10 @@ ul li.active-nav {
 
 .about-background img {
 	width: 100%;
+}
+
+.about-background .overlooking-water {
+	margin-top: 10%;
 }
 
 
