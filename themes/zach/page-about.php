@@ -27,7 +27,9 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<div class="about-background"></div>
+		<div class="about-background">
+			<img src="<?php echo get_stylesheet_directory_uri() . '/images/about-bg.jpg' ?>">
+		</div>
 
 	</div>
 </section>

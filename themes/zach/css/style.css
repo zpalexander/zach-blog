@@ -816,11 +816,11 @@ ul li.active-nav {
  * -----------------------------------------------------------------------------
  */
 
- .page-id-54 .site-content {
+.page-id-54 .site-content {
  	width: 100%;
- }
+}
 
- .about-info-container {
+.about-info-container {
  	position: absolute;
  	height: 5000px;
  	width: 100%;
@@ -828,16 +828,15 @@ ul li.active-nav {
  	background: none;
  	z-index: 1;
  	opacity: 1;
- }
+}
 
- .about-info-container div {
+.about-info-container div {
  	background: #FFF;
- 	margin: 200px 0;
- 	padding: 25px 200px;
- }
+	margin: 200px 0;
+	padding: 25px 200px;
+}
 
- .about-background {
- 	background-image: url('../images/about-bg.jpg');
+.about-background {
  	position: fixed;
  	width: 100%;
  	height: 300%;
@@ -845,8 +844,11 @@ ul li.active-nav {
  	left: 0;
  	opacity: .99;
  	z-index: 0;
- }
+}
 
+.about-background img {
+	width: 100%;
+}
 
 
 
