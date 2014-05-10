@@ -39,6 +39,10 @@ function zach_scripts_styles() {
 		wp_enqueue_script( 'photos', get_template_directory_uri() . "/js/custom/photos.js", array( 'jquery' ) );
 	}
 
+	if ( is_page( 'about' ) ) {
+		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery' ) );
+	}
+
 	if ( is_home() ) {
 		wp_enqueue_script( 'blog', get_template_directory_uri() . "/js/custom/blog.js", array( 'jquery' ) );
 	}
