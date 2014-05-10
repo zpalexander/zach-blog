@@ -821,9 +821,13 @@ ul li.active-nav {
  }
 
  .about-info-container {
+ 	position: absolute;
+ 	height: 5000px;
  	width: 100%;
  	margin: 0 auto;
  	background: none;
+ 	z-index: 1;
+ 	opacity: 1;
  }
 
  .about-info-container div {
@@ -832,14 +836,15 @@ ul li.active-nav {
  	padding: 25px 200px;
  }
 
- .about-background-container {
- 	background: none;
+ .about-background {
+ 	background-image: url('../images/about-bg.jpg');
  	position: fixed;
  	width: 100%;
  	height: 300%;
  	top: 0;
  	left: 0;
- 	z-index: -1;
+ 	opacity: .99;
+ 	z-index: 0;
  }
 
 

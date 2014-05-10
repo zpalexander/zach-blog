@@ -27,7 +27,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<div class="about-background-container"></div>
+		<div class="about-background"></div>
 
 	</div>
 </section>
