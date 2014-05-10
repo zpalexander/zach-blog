@@ -50,9 +50,11 @@
 							Home
 						</li>
 					</a>
-					<li>
-						About
-					</li>
+					<a href="?php echo esc_url( home_url( '/about' ) ); ?>" rel="about">
+						<li <?php if (is_page('about')) echo 'class="active-nav"'; ?>>
+							About
+						</li>
+					</a>
 					<a href="<?php echo esc_url( home_url( '/photos' ) ); ?>" rel="photos">
 						<li <?php if (is_page('photos')) echo 'class="active-nav"'; ?>>
 							Photos
