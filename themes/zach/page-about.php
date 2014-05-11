@@ -18,7 +18,7 @@ get_header(); ?>
 			</div>
 
 			<div class="primary-skills">
-				Lungo ut, steamed at steamed, robust, strong cream qui pumpkin spice est dark breve. Half and half blue mountain white body sugar aroma, dripper con panna, spoon, seasonal half and half roast steamed lungo black, organic sugar shop, instant grounds a arabica lungo americano. Roast, americano café au lait, skinny in fair trade, extra instant froth at, grounds a, extra cappuccino coffee seasonal turkish that grounds. Redeye, macchiato frappuccino and arabica, café au lait, dark, so grinder arabica crema white cultivar medium organic. Eu robusta grounds caramelization, organic turkish that, foam con panna instant crema aftertaste doppio filter extra, crema, shop flavour milk percolator crema. Mocha bar, brewed instant kopi-luwak instant, qui, arabica fair trade, cup skinny white grinder, doppio cappuccino flavour coffee robusta aromatic. Strong aged et pumpkin spice, single origin kopi-luwak café au lait sit acerbic, decaffeinated, mocha fair trade filter brewed decaffeinated strong, sit, strong that foam at extraction.
+				<h2>Interests</h2>
 			</div>
 
 			<div class="experience">
@@ -35,7 +35,12 @@ get_header(); ?>
 		</section>
 
 		<div class="about-background">
-			<img class="overlooking-water" src="<?php echo get_stylesheet_directory_uri() . '/images/overlooking-water.jpg' ?>">
+			<div class="overlooking-water">
+				<img src="<?php echo get_stylesheet_directory_uri() . '/images/overlooking-water.jpg' ?>">
+			</div>
+			<div class="edc">
+				<img src="<?php echo get_stylesheet_directory_uri() . '/images/edc.png' ?>">
+			</div>
 		</div>
 
 	</div>
