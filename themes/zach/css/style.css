@@ -818,6 +818,7 @@ ul li.active-nav {
 
 .page-id-54 .site-content {
  	width: 100%;
+ 	display: none;
 }
 
 .about-info-container {
@@ -832,6 +833,8 @@ ul li.active-nav {
 
 /* Parallax sections */
 
+
+/* Business Card */
 .about-info-container .business-card {
 	background: #121212;
 }
@@ -861,8 +864,50 @@ ul li.active-nav {
 	text-align: center;
 }
 
+.about-info-container .business-card .self-summary {
+
+}
+
+.about-info-container .business-card .arrow-instructions {
+	opacity: 0.75;
+	text-transform: uppercase;
+	font-size: .7em;
+}
+
+@-webkit-keyframes arrows {
+	0% { top:0; }
+	10% { top:1%; }
+	20% { top:0; }
+	30% { top:1%; }
+	40% { top:-1%; }
+	50% { top:1%; }
+	60% { top:0; }
+	70% { top:1%; }
+	80% { top:-1%; }
+	90% { top:1%; }
+	100% { top:0; }
+}
+
+.down-arrow {
+	display: none;
+	position: relative;
+	bottom: 0;
+	left: 50%;
+	margin-left:-20px;
+	margin-top: 12%;
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/down-arrow.png');
+	background-size: contain;
+	-webkit-animation: arrows 2.8s 0.4s;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-count: infinite;
+}
+
+
+
+/* Primary Skills */
 .about-info-container .primary-skills {
-	margin-top: 40%;
 	background: #6ABED8;
 	border-top: 5px solid #2B2B2B;
 	border-bottom: 5px solid #2B2B2B;
