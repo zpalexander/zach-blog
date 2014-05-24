@@ -8,8 +8,9 @@
 	var setContainers = function() {
 		var windowHeight = $( window ).height();
 		$( '.business-card' ).height( (windowHeight-55) );
-		$( '.about-sections' ).height( (windowHeight-65) ).css('margin-top', windowHeight);
-		$( '.primary-skills' ).height( (windowHeight-65) );
+		$( '.about-sections' ).height()
+		$( '.about-sections' ).css('margin-top', windowHeight);
+		//$( '.primary-skills' ).height( (windowHeight-65) );
 	};
 
 	var initListeners = function() {
@@ -29,8 +30,6 @@
 	};
 
 
-
-
 	/***********************
 	***Behavior Functions***
 	***********************/
@@ -42,16 +41,39 @@
 	    var windowHeight = $(window).height();
 	    $('.about-background').css('top', -(scrolled * 0.1) + 'px');
 
-	    // After interests, hide first image and show second
-	    if ( scrolled > windowHeight * 1.9) {
-	    	$( '.overlooking-water').css('z-index', '1');
-	    	$( '.edc' ).css('z-index', '2');	
-	    }
-	    else if ( (scrolled < (windowHeight * 1.9) ) && ( $( '.edc' ).css('z-index') == 2 ) ) {
-	    		$( '.overlooking-water').css('z-index', '2');
-	    		$( '.edc' ).css('z-index', '1');
+	    // Load skills once we hit that section
+	    if ( $( '#primary-skills' ).visible( 'partial' ) ) {
+	    	turnUpSkills();
 	    }
 	};
+
+
+	var turnUpSkills = function() {
+		var html5        = '70%';
+		var css3         = '80%';
+		var php          = '70%';
+		var javascript   = '60%';
+		var jquery       = '80%';
+		var mysql        = '40%';
+		var drupal       = '50%';
+		var wordpress    = '80%';
+		var git          = '60%';
+		var java         = '40%';
+		var android      = '30%';
+		var photoshop    = '40%';
+		$( '.html5-skill' ).delay( 1000 ).animate({width: html5}, 1000);
+		$( '.css3-skill' ).delay( 1000 ).animate({width: css3}, 1000);
+		$( '.php-skill' ).delay( 1000 ).animate({width: php}, 1000);
+		$( '.javascript-skill').delay( 1000 ).animate({width: javascript}, 1000);
+		$( '.jquery-skill' ).delay( 1000 ).animate({width: jquery}, 1000);
+		$( '.mysql-skill' ).delay( 1000 ).animate({width: mysql}, 1000);
+		$( '.drupal-skill' ).delay( 1000 ).animate({width: drupal}, 1000);
+		$( '.wordpress-skill' ).delay( 1000 ).animate({width: wordpress}, 1000);
+		$( '.git-skill' ).delay( 1000 ).animate({width: git}, 1000);
+		$( '.java-skill' ).delay( 1000 ).animate({width: java}, 1000);
+		$( '.android-skill' ).delay( 1000 ).animate({width: android}, 1000);
+		$( '.photoshop-skill' ).delay( 1000 ).animate({width: photoshop}, 1000);
+	}
 
 
 

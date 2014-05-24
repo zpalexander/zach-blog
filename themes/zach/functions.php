@@ -45,8 +45,9 @@ function zach_scripts_styles() {
 	}
 
 	if ( is_page( 'about' ) ) {
-		wp_enqueue_script( 'jcarousel', get_template_directory_uri() . "/js/contrib/jcarousel.min.js", array( 'jquery' ) );
-		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery', 'jcarousel' ) );
+		wp_enqueue_script( 'jcarousel', get_template_directory_uri() . "/js/contrib/jquery.jcarousel.js", array( 'jquery' ) );
+		wp_enqueue_script( 'visible', get_template_directory_uri() . "/js/contrib/jquery.visible.js", array( 'jquery' ) );
+		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery', 'jcarousel', 'visible' ) );
 	}
 
 	if ( is_home() ) {

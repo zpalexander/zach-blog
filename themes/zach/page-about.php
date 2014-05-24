@@ -21,10 +21,12 @@ get_header(); ?>
 
 			<div class="about-sections">
 				<div id="primary-skills" class="primary-skills">
+					<!--
 					<div class="skill-carousel-wrapper">
 						<ul class="skill-carousel list-reset">
-							<li class="skill-title-card">
-							</li>
+							<li class="skill-title-card">-->
+								<?php include( TEMPLATEPATH . '/about-partials/skill-title-card.php' ); ?>
+							<!--</li>
 							<li class="skill-front-end-dev">
 							</li>
 						</ul>
@@ -32,6 +34,7 @@ get_header(); ?>
 					<span class="skill-carousel-prev">&#9668;</span>
 					<span class="skill-carousel-next">&#9654;</span>
 				</div>
+				-->
 
 				<!-- Inspiration for this section at http://www.behance.net/gallery/My-Resume/6217587 -->
 				<div class="experience">

@@ -65,17 +65,17 @@ This theme, like WordPress, is licensed under the GPL.
 
  /* Clearfix */
 .clearfix:after {
-    clear: both;
-    content: ".";
-    display: block;
-    height: 0;
-    visibility: hidden;
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
 }
 .clearfix {
-    display: inline-block;
+	display: inline-block;
 }
 .clearfix {
-    display: block;
+	display: block;
 }
 
 /* Input fields */
@@ -607,6 +607,10 @@ ul li.active-nav {
 	color: #2B2B2B;
 }
 
+.blog-post-teaser-container p {
+	color: #FFF!important;
+}
+
 .blog-post-teaser-container .blog-teaser-date {
 	float: right;
 	margin-top: -50px;
@@ -635,9 +639,9 @@ ul li.active-nav {
 
 
 .blog-teaser-image {
-	float: left;
-	display: inline;
-	width: 30%;
+	float: none;
+	display: block;
+	width: 100%;
 	height: auto;
 	border-style: solid;
 	border-width: 2px;
@@ -648,7 +652,7 @@ ul li.active-nav {
 }
 
 .blog-teaser-text {
-	padding-left: 35%;
+	padding-top: 20px;
 	color: #FFF;
 	font-family: Futura;
 }
@@ -715,6 +719,10 @@ ul li.active-nav {
 	font-family: Futura;
 }
 
+.blog-post-content p {
+	color: #FFF!important;
+}
+
 
 /**
  * 7.0 Photo
@@ -737,7 +745,7 @@ ul li.active-nav {
 
 
  .photo {
- 	position: relative;
+	position: relative;
 	display: none;
 	width: auto;
 	margin: 1% .5% 1% .5%;
@@ -817,18 +825,18 @@ ul li.active-nav {
  */
 
 .about-content {
- 	width: 100%;
- 	display: none;
+	width: 100%;
+	display: none;
 }
 
 .about-container {
- 	position: absolute;
- 	width: 100%;
- 	height: 3000px;
- 	margin: 0 auto;
- 	background: none;
- 	z-index: 1;
- 	opacity: 1;
+	position: absolute;
+	width: 100%;
+	height: 3000px;
+	margin: 0 auto;
+	background: none;
+	z-index: 1;
+	opacity: 1;
 }
 
 /* Parallax sections */
@@ -902,17 +910,17 @@ ul li.active-nav {
 	background-image: url('images/down-arrow.png');
 	background-size: contain;
 	-webkit-animation: arrows 2.8s 0.4s;
-    -webkit-animation-delay: 1s;
-    -webkit-animation-count: infinite;
+	-webkit-animation-delay: 1s;
+	-webkit-animation-count: infinite;
 }
 
 
 
 /* Primary Skills */
 .about-container .primary-skills {
-	background: #6ABED8;
-	border-top: 5px solid #2B2B2B;
-	border-bottom: 5px solid #2B2B2B;
+	background: #121212;
+	border-top: 40px solid #2B2B2B;
+	border-bottom: 40px solid #2B2B2B;
 }
 
 .about-container .primary-skills .skill-carousel-wrapper {
@@ -925,9 +933,148 @@ ul li.active-nav {
 	width: 2000em;
 }
 
+.about-container .primary-skills .skill-title-card {
+	background: #25AAE1;
+}
+
+.about-container .primary-skills .skill-front-end-card {	
+	background: #BF1E2D;	
+}
+
 .about-container .primary-skills .skill-carousel li {
 	height: 100%;
+	display: inline;
 }
+
+.about-container .primary-skills .skills-title-card-graph h1 {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 50px;
+	border-bottom: 40px solid #2B2B2B;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.about-container .primary-skills .skills-title-card-graph ul {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+	list-style: none;
+}
+
+.about-container .primary-skills .skills-title-card-graph .skill {
+	width: 100%;
+	height: 100px;
+}
+
+.about-container .primary-skills .skills-title-card-graph .skill-logo {
+	width: 10%;
+	height: 60px;
+	float: left;
+	text-align: center;
+}
+
+.about-container .primary-skills .skills-title-card-graph .skill-logo img {
+	height: 100%;
+	width: auto;
+	max-height: 100px;
+	vertical-align: middle;
+}
+
+.skill-meter {
+	width: 50%;
+	float: right;
+	padding: 0;
+	height: 40px;
+	margin-right: 20%;
+	position: relative;
+	list-style-type: none;
+	background: #2B2B2B;
+	border: 10px solid #000;
+}
+
+.color-bar {
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	width: 7.5%;
+	height: 100%;
+	background:#AEED25;
+}
+
+.mask {
+	float: left;
+	margin:0;
+	position:relative;
+	height: 100%;
+}
+
+.mask:nth-child(odd) {
+	width: 2.75%;
+	background: #000;
+}
+
+.mask:nth-child(even) {
+	width: 7.5%;
+}
+
+/* Skill Levels */
+.color-bar {
+	width: 0;
+}
+/*
+.html5-skill {
+	width: 70%;
+}
+
+.css3-skill {
+	width: 80%;
+}
+
+.php-skill {
+	width: 70%;
+}
+
+.javascript-skill {
+	width: 70%;
+}
+
+.jquery-skill {
+	width: 80%;
+}
+
+.mysql-skill {
+	width: 40%;
+}
+
+.drupal-skill {
+	width: 50%;
+}
+
+.wordpress-skill {
+	width: 80%;
+}
+
+.git-skill {
+	width: 60%;
+}
+
+.java-skill {
+	width: 40%;
+}
+
+.android-skill {
+	width: 30%;
+}
+
+.photoshop-skill {
+	width: 40%;
+}
+*/
+
 
 .about-container 
 .skill-carousel-prev,
@@ -955,7 +1102,6 @@ ul li.active-nav {
 /* Experience */
 .about-container .experience {
 	background: #6ABED8;
-	margin-top: -12px;	
 	height: 1500px;
 }
 
@@ -970,13 +1116,13 @@ ul li.active-nav {
 
 
 .about-background {
- 	position: fixed;
- 	width: 100%;
- 	height: 300%;
- 	top: 0;
- 	left: 0;
- 	opacity: .99;
- 	z-index: 0;
+	position: fixed;
+	width: 100%;
+	height: 300%;
+	top: 0;
+	left: 0;
+	opacity: .99;
+	z-index: 0;
 }
 
 .about-background img {
@@ -985,7 +1131,6 @@ ul li.active-nav {
 
 .about-background .overlooking-water {
 	position: absolute;
-	height: 40%;
 	width: 100%;
 	overflow: hidden;
 	z-index: 2;
@@ -1485,40 +1630,41 @@ ul li.active-nav {
  */
 
  .home {
- 	background: url('images/homepage.jpg') no-repeat center top fixed;
- 	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	display: none;
+	background: url('images/homepage.jpg') no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
  }
 
  .home .sidebar {
- 	display: none;
+	display: none;
  }
 
  .home .social-media-container {
- 	display: none;
- 	position: fixed;
- 	top: 282px;
- 	left: 0;
- 	background: #121212;
- 	width: 300px;
- 	border-top: solid 2px #232323;
+	display: none;
+	position: fixed;
+	top: 282px;
+	left: 0;
+	background: #121212;
+	width: 300px;
+	border-top: solid 2px #232323;
  }
 
  .home .social-media-container li {
- 	display: inline;
+	display: inline;
  }
 
  .home .social-media-link {
- 	display: none;
- 	opacity: .5;
- 	width: 30px;
- 	padding: 10px;
+	display: none;
+	opacity: .5;
+	width: 30px;
+	padding: 10px;
  }
 
  .home .social-media-link:hover {
- 	opacity: 1;
+	opacity: 1;
  }
 
  .home .twitter {
@@ -2188,28 +2334,46 @@ ul li.active-nav {
 	}
 
 	 .home .social-media-container {
-	 	display: block;
-	 	top: 56px;
-	 	bottom: 0;
-	 	right: 0;
-	 	left: auto;
-	 	border: none;
-	 	background: none;
-	 	width: auto;
+		display: block;
+		top: 56px;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		border: none;
+		background: none;
+		width: auto;
 	 }
 
 	 .home .social-media-container li {
-	 	margin: 30% 0 30% 0;
-	 	display: block;
+		margin: 30% 0 30% 0;
+		display: block;
 	 }
 
 	 .home .social-media-link {
-	 	opacity: .5;
-	 	width: auto;
+		opacity: .5;
+		width: auto;
 	 }
 
 	.photo {
 		width: 47%;
+	}
+
+	.blog-teaser-image {
+		float: left;
+		display: inline;
+		width: 30%;
+	}
+
+	.blog-teaser-text {
+		padding-left: 35%;
+		padding-top: 0;
+	}
+
+	.about-container .primary-skills .skills-title-card-graph .skill {
+		float: left;
+		display: inline;
+		width: 50%;
+		height: 100px;
 	}
 	
 }
