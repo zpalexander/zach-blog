@@ -816,12 +816,12 @@ ul li.active-nav {
  * -----------------------------------------------------------------------------
  */
 
-.page-id-54 .site-content {
+.about-content {
  	width: 100%;
  	display: none;
 }
 
-.about-info-container {
+.about-container {
  	position: absolute;
  	width: 100%;
  	height: 3000px;
@@ -835,11 +835,11 @@ ul li.active-nav {
 
 
 /* Business Card */
-.about-info-container .business-card {
+.about-container .business-card {
 	background: #121212;
 }
 
-.about-info-container .business-card img {
+.about-container .business-card img {
 	display: block;
 	opacity: 0;
 	margin: 0 auto;
@@ -848,7 +848,7 @@ ul li.active-nav {
 	height: 50px;
 }
 
-.about-info-container .business-card h2 {
+.about-container .business-card h2 {
 	display: none;
 	color: #FFF;
 	padding-top: 1%;
@@ -856,7 +856,7 @@ ul li.active-nav {
 	text-align: center;
 }
 
-.about-info-container .business-card p {
+.about-container .business-card p {
 	display: none;
 	color: #FFF;
 	padding-top: 1%;
@@ -864,14 +864,15 @@ ul li.active-nav {
 	text-align: center;
 }
 
-.about-info-container .business-card .self-summary {
+.about-container .business-card .self-summary {
 
 }
 
-.about-info-container .business-card .arrow-instructions {
+.about-container .business-card .arrow-instructions {
 	opacity: 0.75;
 	text-transform: uppercase;
 	font-size: .7em;
+	cursor: pointer;
 }
 
 @-webkit-keyframes arrows {
@@ -891,13 +892,14 @@ ul li.active-nav {
 .down-arrow {
 	display: none;
 	position: relative;
+	cursor: pointer;
 	bottom: 0;
 	left: 50%;
 	margin-left:-20px;
 	margin-top: 12%;
 	width: 40px;
 	height: 40px;
-	background-image: url('../images/down-arrow.png');
+	background-image: url('images/down-arrow.png');
 	background-size: contain;
 	-webkit-animation: arrows 2.8s 0.4s;
     -webkit-animation-delay: 1s;
@@ -907,30 +909,62 @@ ul li.active-nav {
 
 
 /* Primary Skills */
-.about-info-container .primary-skills {
+.about-container .primary-skills {
 	background: #6ABED8;
 	border-top: 5px solid #2B2B2B;
 	border-bottom: 5px solid #2B2B2B;
 }
 
-.about-info-container .primary-skills h2 {
-	position: relative;
-	margin: 0 auto;
+.about-container .primary-skills .skill-carousel-wrapper {
+	height: 100%;
+	overflow: hidden;
+}
+
+.about-container .primary-skills .skill-carousel {
+	height: 100%;
+	width: 2000em;
+}
+
+.about-container .primary-skills .skill-carousel li {
+	height: 100%;
+}
+
+.about-container 
+.skill-carousel-prev,
+.skill-carousel-next {
+	position: absolute;
+	cursor: pointer;
+	margin-top: -55px;
+	top: 50%;
+	width: 60px;
+	height: 85px;
 	text-align: center;
-	padding-top: 16%;
-	font-size: 5em;
-	text-transform: uppercase;
+	line-height: 230%;
 }
 
-.about-info-container .experience {
+.about-container .skill-carousel-prev {
+	left: 0;
+}
+
+.about-container .skill-carousel-next {
+	right: 0;
+}
+
+
+
+/* Experience */
+.about-container .experience {
+	background: #6ABED8;
+	margin-top: -12px;	
+	height: 1500px;
+}
+
+
+.about-container .notable-projects {
 
 }
 
-.about-info-container .notable-projects {
-
-}
-
-.about-info-container .hobbies {
+.about-container .hobbies {
 
 }
 
@@ -957,18 +991,6 @@ ul li.active-nav {
 	z-index: 2;
 }
 
-.about-background .edc {
-	position: absolute;
-	margin-top: 15%;
-	height: 40%;
-	width: 100%;
-	overflow: hidden;
-	z-index: 1;
-}
-
-.about-background .img {
-	height: 400px;	
-}
 
 
 
@@ -1463,7 +1485,7 @@ ul li.active-nav {
  */
 
  .home {
- 	background: url('../images/homepage.jpg') no-repeat center top fixed;
+ 	background: url('images/homepage.jpg') no-repeat center top fixed;
  	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;

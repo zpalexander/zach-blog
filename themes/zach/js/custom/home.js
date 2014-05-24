@@ -8,6 +8,8 @@
 	};
 
 	$(window).load(function() {
+		var windowHeight = $( window ).height();
+		$( 'body' ).css('min-height', windowHeight);
 		$( '.social-media-link' ).fadeIn(1200);
 		$( window ).resize(handleSocialMedia);
 	});

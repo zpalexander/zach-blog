@@ -13,6 +13,11 @@
   */
  require(dirname( __FILE__ ).'/includes/functionality.php');
 
+/**
+ * 
+ * Hide admin bar
+ */
+show_admin_bar( false );
 
 
 /**
@@ -23,7 +28,7 @@
 add_action( 'wp_enqueue_scripts', 'zach_scripts_styles' );
 function zach_scripts_styles() {
 	// Enqueue main stylesheet
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . "/css/style.css");
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . "/style.css");
 	// Enqueue normalizing stylesheet
 	wp_enqueue_style('normalize-style', get_template_directory_uri() . "/css/normalize.css");
 
@@ -40,7 +45,8 @@ function zach_scripts_styles() {
 	}
 
 	if ( is_page( 'about' ) ) {
-		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery' ) );
+		wp_enqueue_script( 'jcarousel', get_template_directory_uri() . "/js/contrib/jcarousel.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery', 'jcarousel' ) );
 	}
 
 	if ( is_home() ) {
