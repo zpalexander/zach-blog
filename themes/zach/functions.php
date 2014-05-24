@@ -31,9 +31,10 @@ function zach_scripts_styles() {
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . "/style.css");
 	// Enqueue normalizing stylesheet
 	wp_enqueue_style('normalize-style', get_template_directory_uri() . "/css/normalize.css");
-
 	// Enqueue header script on all pages
 	wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/custom/nav.js", array( 'jquery' ) );
+	// Enqueue smooth scrolling on all pages
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . "/js/contrib/jquery.smoothwheel.js", array( 'jquery' ) );
 
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'home', get_template_directory_uri() . "/js/custom/home.js", array( 'jquery' ) );

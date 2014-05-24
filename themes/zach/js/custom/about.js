@@ -61,18 +61,18 @@
 		var java         = '40%';
 		var android      = '30%';
 		var photoshop    = '40%';
-		$( '.html5-skill' ).delay( 1000 ).animate({width: html5}, 1000);
-		$( '.css3-skill' ).delay( 1000 ).animate({width: css3}, 1000);
-		$( '.php-skill' ).delay( 1000 ).animate({width: php}, 1000);
-		$( '.javascript-skill').delay( 1000 ).animate({width: javascript}, 1000);
-		$( '.jquery-skill' ).delay( 1000 ).animate({width: jquery}, 1000);
-		$( '.mysql-skill' ).delay( 1000 ).animate({width: mysql}, 1000);
-		$( '.drupal-skill' ).delay( 1000 ).animate({width: drupal}, 1000);
-		$( '.wordpress-skill' ).delay( 1000 ).animate({width: wordpress}, 1000);
-		$( '.git-skill' ).delay( 1000 ).animate({width: git}, 1000);
-		$( '.java-skill' ).delay( 1000 ).animate({width: java}, 1000);
-		$( '.android-skill' ).delay( 1000 ).animate({width: android}, 1000);
-		$( '.photoshop-skill' ).delay( 1000 ).animate({width: photoshop}, 1000);
+		$( '.html5-skill' ).delay( 1000 ).animate({width: html5}, 1200);
+		$( '.css3-skill' ).delay( 1000 ).animate({width: css3}, 1200);
+		$( '.php-skill' ).delay( 1000 ).animate({width: php}, 1200);
+		$( '.javascript-skill').delay( 1000 ).animate({width: javascript}, 1200);
+		$( '.jquery-skill' ).delay( 1000 ).animate({width: jquery}, 1200);
+		$( '.mysql-skill' ).delay( 1000 ).animate({width: mysql}, 1200);
+		$( '.drupal-skill' ).delay( 1000 ).animate({width: drupal}, 1200);
+		$( '.wordpress-skill' ).delay( 1000 ).animate({width: wordpress}, 1200);
+		$( '.git-skill' ).delay( 1000 ).animate({width: git}, 1200);
+		$( '.java-skill' ).delay( 1000 ).animate({width: java}, 1200);
+		$( '.android-skill' ).delay( 1000 ).animate({width: android}, 1200);
+		$( '.photoshop-skill' ).delay( 1000 ).animate({width: photoshop}, 1200);
 	}
 
 

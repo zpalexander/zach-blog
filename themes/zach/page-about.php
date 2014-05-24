@@ -38,7 +38,7 @@ get_header(); ?>
 
 				<!-- Inspiration for this section at http://www.behance.net/gallery/My-Resume/6217587 -->
 				<div class="experience">
-					<h2>Timeline</h2>
+					<?php include( TEMPLATEPATH . '/about-partials/experience.php'); ?>
 				</div>
 
 				<div class="notable-projects">
