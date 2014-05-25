@@ -1134,6 +1134,21 @@ ul li.active-nav {
 	margin-left: -90px;
 	color: #FFF;
 	font-size: 1.2em;
+	height: 40px;
+}
+
+.about-container .experience .experience-timeline .timeline-year span {
+	vertical-align: top;
+}
+
+.about-container .experience .experience-timeline .timeline-year:after {
+	display: inline-block;
+	content: '';
+	background: url('images/bullet.png');	
+	background-position: center;
+	width: 38px;
+	height: 100%;
+	margin-left: 19px;
 }
 
 

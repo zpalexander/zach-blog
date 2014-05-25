@@ -6,18 +6,18 @@
 
 <ul class="experience-timeline">
 	<li class="timeline-year">
-		2014
+		<span>2014</span>
 	</li>
 	<li class="timeline-year">
-		2013
+		<span>2013</span>
 	</li>
 	<li class="timeline-year">
-		2012
+		<span>2012</span>
 	</li>
 	<li class="timeline-year">
-		2011
+		<span>2011</span>
 	</li>
 	<li class="timeline-year">
-		2010
+		<span>2010</span>
 	</li>
 </ul>
