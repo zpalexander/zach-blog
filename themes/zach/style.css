@@ -1404,7 +1404,7 @@ ul li.active-nav {
  .home .social-media-container {
 	display: none;
 	position: fixed;
-	top: 282px;
+	top: 284px;
 	left: 0;
 	background: #121212;
 	width: 300px;
@@ -1413,6 +1413,10 @@ ul li.active-nav {
 
  .home .social-media-container li {
 	display: inline;
+ }
+
+ .home .social-media-container li:first-child {
+ 	margin-left: 10px;
  }
 
  .home .social-media-link {
@@ -2106,6 +2110,10 @@ ul li.active-nav {
 	 .home .social-media-container li {
 		margin: 30% 0 30% 0;
 		display: block;
+	 }
+
+	 .home .social-media-container li:first-child {
+	 	margin: 30% 0 30% 0;
 	 }
 
 	 .home .social-media-link {
