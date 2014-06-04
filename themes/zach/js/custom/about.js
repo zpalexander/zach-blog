@@ -7,7 +7,7 @@
 
 	var setContainers = function() {
 		var windowHeight = $( window ).height();
-		$( '.business-card' ).height( (windowHeight-55) );
+		//$( '.business-card' ).height( (windowHeight-56) );
 		$( '.about-sections' ).height()
 		$( '.about-sections' ).css('margin-top', windowHeight);
 		//$( '.primary-skills' ).height( (windowHeight-65) );
@@ -25,8 +25,8 @@
 		$( '.business-card img' ).animate({opacity: 1}, 2000);
 		$( '.business-card h2' ).delay( 2000 ).fadeIn( 1500 );
 		$( '.business-card .self-summary').delay( 3500 ).fadeIn( 1500 );
-		$( '.down-arrow' ).delay( 6000 ).fadeIn( 500 );
-		$( '.arrow-instructions').delay( 6000 ).fadeIn( 500 )
+		//$( '.down-arrow' ).delay( 6000 ).fadeIn( 500 );
+		//$( '.arrow-instructions').delay( 6000 ).fadeIn( 500 )
 	};
 
 
@@ -110,7 +110,7 @@
 		initListeners();
 		fadeInBusinessCard();
 		setupCarousel();
-		$( window ).scroll(parallax);	
+		$( window ).scroll(parallax);
 	});
 
 })(jQuery);
