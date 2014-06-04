@@ -7,7 +7,7 @@
 
 	var setContainers = function() {
 		var windowHeight = $( window ).height();
-		//$( '.business-card' ).height( (windowHeight-56) );
+		$( '.business-card' ).height( (windowHeight-56) );
 		$( '.about-sections' ).height()
 		$( '.about-sections' ).css('margin-top', windowHeight);
 		//$( '.primary-skills' ).height( (windowHeight-65) );
