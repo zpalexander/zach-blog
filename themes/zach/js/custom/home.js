@@ -26,9 +26,9 @@
 	};
 
 	$(window).load(function() {
-		$( '.home' ).fadeIn(500);
 		setContentHeight();
-		$( '.social-media-link' ).fadeIn(1200);
+		$( '.home' ).fadeIn(1200);
+		$( '.social-media-link' ).fadeIn(1500);
 		handleSocialMedia();
 		$( window ).resize(handleSocialMedia).resize(setContentHeight);
 	});
