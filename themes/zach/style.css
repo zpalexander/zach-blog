@@ -467,7 +467,7 @@ span + .edit-link:before,
 }
 
 .site-navigation li {
-	padding: 15px 20px;	
+	padding: 15px 20px;
 	font-size: 1.2em;
 	cursor: pointer;
 	display: block;
@@ -668,7 +668,7 @@ ul li.active-nav {
 .blog-post-wrapper {
 	display: none;
 	padding: 30px;
-	margin: 10px 0  10px 0;	
+	margin: 10px 0  10px 0;
 	background: #6A6A68;
 	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
@@ -783,7 +783,7 @@ ul li.active-nav {
  .photo .photo-info .photo-thumb-date {
 	position: absolute;
 	top: 5px;
-	right: 10px;	
+	right: 10px;
 }
 
  .photo .photo-info .photo-thumb-location {
@@ -904,7 +904,7 @@ ul li.active-nav {
 	bottom: 0;
 	left: 50%;
 	margin-left:-20px;
-	margin-top: 12%;
+	margin-top: 100px;
 	width: 40px;
 	height: 40px;
 	background-image: url('images/down-arrow.png');
@@ -937,8 +937,8 @@ ul li.active-nav {
 	background: #25AAE1;
 }
 
-.about-container .primary-skills .skill-front-end-card {	
-	background: #BF1E2D;	
+.about-container .primary-skills .skill-front-end-card {
+	background: #BF1E2D;
 }
 
 .about-container .primary-skills .skill-carousel li {
@@ -1076,7 +1076,7 @@ ul li.active-nav {
 */
 
 
-.about-container 
+.about-container
 .skill-carousel-prev,
 .skill-carousel-next {
 	position: absolute;
@@ -1144,7 +1144,7 @@ ul li.active-nav {
 .about-container .experience .experience-timeline .timeline-year:after {
 	display: inline-block;
 	content: '';
-	background: url('images/bullet.png');	
+	background: url('images/bullet.png');
 	background-position: center;
 	width: 38px;
 	height: 100%;
@@ -1395,6 +1395,10 @@ ul li.active-nav {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+ }
+
+ .home #page {
+ 	background-color: transparent;
  }
 
  .home .sidebar {
@@ -2142,7 +2146,7 @@ ul li.active-nav {
 		width: 50%;
 		height: 80px;
 	}
-	
+
 }
 
 
@@ -2155,40 +2159,40 @@ ul li.active-nav {
 @media screen and (min-width: 985px) {
 	.sidebar {
 		display: block;
-	}	
+	}
 
 	.blog-page-content {
 		margin: 49px 2% 0% 22% !important;
 	}
 
 	.blog-post-wrapper {
-		margin: 0 0  10px 21.5%;	
+		margin: 0 0  10px 21.5%;
 	}
 
 }
 
 @media screen and (min-width: 1012px) {
-	
+
 }
 
 @media screen and (min-width: 1036px) {
-	
+
 }
 
 @media screen and (min-width: 1060px) {
-		
-	
+
+
 }
 
 @media screen and (min-width: 1140px) {
 }
 
 @media screen and (min-width: 1218px) {
-	
+
 }
 
 @media screen and (min-width: 1260px) {
-	
+
 }
 
 

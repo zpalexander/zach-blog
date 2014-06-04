@@ -1,17 +1,35 @@
 (function($) {
 
+
 	var handleSocialMedia = function() {
 		var windowWidth = $( window ).width();
-		if ( ( windowWidth > 730 ) && ( ! $( '.social-media-container' ).is( ':visible' ) ) ) {
-			$('.social-media-container').show();
+		var windowHeight = $( window ).height();
+		var socialMediaContainerHeight = 487.1875;
+		if ( ( windowWidth > 730 ) ) {
+			// Vertically center social media icons
+			var socialMediaContainerTop = (windowHeight/2) - (socialMediaContainerHeight/2);
+			$( '.social-media-container' ).css('top', socialMediaContainerTop);
+			if ( ! $( '.social-media-container' ).is( ':visible' ) ) {
+				$('.social-media-container').show();
+			}
+		}
+		else {
+			$( '.social-media-container' ).css('top', '284px');
 		}
 	};
 
-	$(window).load(function() {
+	var setContentHeight = function() {
 		var windowHeight = $( window ).height();
+		var headerHeight = $( '.site-header' ).height();
 		$( 'body' ).css('min-height', windowHeight);
+		$( '.home #content' ).height( windowHeight - headerHeight );
+	};
+
+	$(window).load(function() {
 		$( '.home' ).fadeIn(500);
+		setContentHeight();
 		$( '.social-media-link' ).fadeIn(1200);
-		$( window ).resize(handleSocialMedia);
+		handleSocialMedia();
+		$( window ).resize(handleSocialMedia).resize(setContentHeight);
 	});
 })(jQuery);
