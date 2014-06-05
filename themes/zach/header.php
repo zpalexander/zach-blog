@@ -55,15 +55,17 @@
 							About
 						</li>
 					</a>
-					<a href="<?php echo esc_url( home_url( '/photos' ) ); ?>" rel="photos">
-						<li <?php if (is_page('photos')) echo 'class="active-nav"'; ?>>
+					<!--
+					<a href="<?php //echo esc_url( home_url( '/photos' ) ); ?>" rel="photos">
+						<li <?php //if (is_page('photos')) echo 'class="active-nav"'; ?>>
 							Photos
 						</li>
-					<a href="<?php echo esc_url( home_url( '/blog' ) ); ?>" rel="blog">
-						<li <?php if (is_home() || is_single()) echo 'class="active-nav"'; ?>>
+					<a href="<?php //echo esc_url( home_url( '/blog' ) ); ?>" rel="blog">
+						<li <?php //if (is_home() || is_single()) echo 'class="active-nav"'; ?>>
 							Blog
 						</li>
 					</a>
+				-->
 				</ul>
 			</nav>
 		</div>
