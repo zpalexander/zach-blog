@@ -2089,7 +2089,7 @@ ul li.active-nav {
 	}
 
 	.site-navigation li:hover {
-		padding: 10px 20px;
+		padding: 15px 20px;
 		border: none;
 		color: #FFF;
 	}
@@ -2103,6 +2103,7 @@ ul li.active-nav {
 
 	ul li.active-nav:hover {
 		border-bottom: 5px solid #FFF;
+		padding-bottom: 10px;
 	}
 
 	.header-hamburger {
