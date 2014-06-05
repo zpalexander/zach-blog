@@ -2048,8 +2048,13 @@ ul li.active-nav {
 		padding: 0 10px;
 	}
 
-	.error404 .page-header {
-		margin-bottom: 24px;
+	.error404 .page-content {
+		margin: 20% auto 0 auto;
+	}
+
+	.error404 p {
+		color: #FFF;
+		text-align: center;
 	}
 }
 

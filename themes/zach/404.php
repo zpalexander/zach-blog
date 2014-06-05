@@ -12,19 +12,17 @@ get_header(); ?>
 		<div id="content" class="site-content" role="main">
 
 			<header class="page-header">
-				<h1 class="page-title"><?php _e( 'Not Found', 'twentyfourteen' ); ?></h1>
 			</header>
 
 			<div class="page-content">
-				<p>It looks like nothing was found at this location.</p>
+				<p>Three things are certain:</p>
+				<p>Death, taxes, and lost data.</p>
+				<p>Guess which has occured.</p>
 
-				<?php get_search_form(); ?>
 			</div><!-- .page-content -->
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
 get_footer();
