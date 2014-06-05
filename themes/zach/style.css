@@ -872,6 +872,20 @@ ul li.active-nav {
 	text-align: center;
 }
 
+.about-container .business-card .download-cv-button {
+	display: none;
+	cursor: pointer;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #F7F7F7;
+	padding: 10px 15px;
+	width: 130px;
+	margin: 15px auto 0;
+	text-align: center;
+}
+
 .about-container .business-card .self-summary {
 
 }
