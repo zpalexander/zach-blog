@@ -8,6 +8,7 @@
 	var setContainers = function() {
 		var windowHeight = $( window ).height();
 		$( '.business-card' ).height( (windowHeight-56) );
+		$( '.business-card img' ).css('padding-top', (windowHeight/3) );
 		$( '.about-sections' ).height()
 		$( '.about-sections' ).css('margin-top', windowHeight);
 		//$( '.primary-skills' ).height( (windowHeight-65) );
