@@ -740,6 +740,14 @@ ul li.active-nav {
 	font-family: Futura;
 }
 
+.blog-post-content a {
+	color: #6A6A68;
+}
+
+.blog-post-content a:hover {
+	color: #000;
+}
+
 .blog-post-content p {
 	color: #FFF!important;
 }
