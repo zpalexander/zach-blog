@@ -684,6 +684,14 @@ ul li.active-nav {
 	background: #232323;
 }
 
+.single hr {
+	background: #FFF;
+}
+
+code {
+	color: #07CF00;
+}
+
 .blog-post-wrapper {
 	display: none;
 	padding: 30px;
