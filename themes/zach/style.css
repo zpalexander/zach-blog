@@ -610,6 +610,7 @@ ul li.active-nav {
 	margin-bottom: 25px;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .blog-post-teaser-container h2:hover {
@@ -622,8 +623,11 @@ ul li.active-nav {
 
 .blog-post-teaser-container .blog-teaser-date {
 	color: #6A6A68;
-	float: right;
-	margin-top: -50px;
+	float: none;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	text-align: center;
 	text-transform: uppercase;
 }
 
@@ -634,7 +638,8 @@ ul li.active-nav {
 }
 
 .blog-teaser-tags {
-	margin: -25px 0 5px 0;
+	margin: 0;
+	text-align: center;
 }
 
 .blog-teaser-tags img {
@@ -2180,6 +2185,23 @@ ul li.active-nav {
 		padding-top: 0;
 	}
 
+	.blog-post-teaser-container .blog-teaser-date {
+		float: right;
+		width: auto;
+		margin: -50px 0 0 0;
+		display: inline;
+		text-align: left;
+	}
+
+	.blog-teaser-tags {
+		text-align: left;
+		margin: -25px 0 5px 0;
+	}
+
+	.blog-post-teaser-container h2 {
+		text-align: left;
+	}
+
 	.about-container .primary-skills .skills-title-card-graph .skill {
 		float: left;
 		display: inline;
@@ -2200,6 +2222,7 @@ ul li.active-nav {
 	.sidebar {
 		display: block;
 	}
+
 
 	.blog-page-content {
 		margin: 49px 2% 0% 22% !important;
