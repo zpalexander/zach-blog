@@ -579,6 +579,10 @@ ul li.active-nav {
 
 /* Blog */
 
+.blog #primary {
+	background: #232323;
+}
+
 .blog-page-content {
 	margin: 57px 5% 0 !important;
 }
@@ -587,7 +591,7 @@ ul li.active-nav {
 	display: none;
 	padding: 40px 30px 20px 30px;
 	margin: 10px 0;
-	background: #6A6A68;
+	background: transparent;
 	border-color: rgba(0, 0, 0, 0.6);
 	border-width: 3px;
 	border-radius: 20px;
@@ -612,6 +616,7 @@ ul li.active-nav {
 }
 
 .blog-post-teaser-container .blog-teaser-date {
+	color: #6A6A68;
 	float: right;
 	margin-top: -50px;
 	text-transform: uppercase;
@@ -619,12 +624,12 @@ ul li.active-nav {
 
 .blog-post-category {
 	margin-left: 8px;
-	color: #2B2B2B;
+	color: #6A6A68;
 	font-family: Futura;
 }
 
 .blog-teaser-tags {
-	margin: 30px 0 5px 0;
+	margin: -25px 0 5px 0;
 }
 
 .blog-teaser-tags img {
