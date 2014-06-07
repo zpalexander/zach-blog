@@ -14,7 +14,7 @@
 			}
 		}
 		else {
-			$( '.social-media-container' ).css('top', '170px');
+			$( '.social-media-container' ).css('top', '228px');
 		}
 	};
 
