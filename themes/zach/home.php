@@ -53,6 +53,10 @@ get_header(); ?>
 			?>
 		</div>
 
+		<?php if (!( ($the_query->current_post+1) == $the_query->post_count)) : ?>
+			<hr/>
+		<?php endif; ?>
+
 		<?php
 				endwhile;
 				// Previous/next post navigation.
