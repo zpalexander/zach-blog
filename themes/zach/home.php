@@ -32,7 +32,7 @@ get_header(); ?>
 				<div class="blog-teaser-text">
 				<?php
 					$content = get_the_content();
-					$content_limited = substr($content, 0, 1000) . '<a href="' . get_permalink() . '">.....</a>';
+					$content_limited = substr($content, 0, 500) . '<a href="' . get_permalink() . '">.....</a>';
 					echo $content_limited;
 				?>
 				</div>
