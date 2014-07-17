@@ -926,6 +926,11 @@ code {
 	text-align: center;
 }
 
+.about-container .business-card .download-cv-button:hover {
+	color: white;
+	background-color: #232323;
+}
+
 .about-container .business-card .self-summary {
 
 }
