@@ -84,7 +84,7 @@ input,
 textarea {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 2px;
-	color: #2b2b2b;
+	color: #4F4F4F;
 	padding: 8px 10px 7px;
 }
 
@@ -509,7 +509,7 @@ ul li.active-nav {
 
 .primary-navigation a {
 	padding: 7px 0;
-	color: #2b2b2b;
+	color: #4F4F4F;
 }
 
 /* Secondary Navigation */
@@ -614,7 +614,7 @@ ul li.active-nav {
 }
 
 .blog-post-teaser-container h2:hover {
-	color: #2B2B2B;
+	color: #4F4F4F;
 }
 
 .blog-post-teaser-container p {
@@ -677,7 +677,7 @@ ul li.active-nav {
 }
 
 .blog-teaser-text a:hover {
-	color: #2B2B2B;
+	color: #4F4F4F;
 }
 
 .single #primary {
@@ -981,8 +981,8 @@ code {
 /* Primary Skills */
 .about-container .primary-skills {
 	background: #121212;
-	border-top: 40px solid #2B2B2B;
-	border-bottom: 40px solid #2B2B2B;
+	border-top: 40px solid #4F4F4F;
+	border-bottom: 40px solid #4F4F4F;
 }
 
 .about-container .primary-skills .skill-carousel-wrapper {
@@ -1014,7 +1014,7 @@ code {
 	text-transform: uppercase;
 	color: #FFF;
 	font-size: 50px;
-	border-bottom: 40px solid #2B2B2B;
+	border-bottom: 40px solid #4F4F4F;
 	margin-top: 0;
 	margin-bottom: 50px;
 }
@@ -1053,7 +1053,7 @@ code {
 	margin-right: 20%;
 	position: relative;
 	list-style-type: none;
-	background: #2B2B2B;
+	background: #4F4F4F;
 	border: 10px solid #000;
 }
 
@@ -1269,7 +1269,7 @@ code {
 }
 
 .entry-title a {
-	color: #2b2b2b;
+	color: #4F4F4F;
 }
 
 .entry-title a:hover {
@@ -1326,7 +1326,7 @@ code {
 
 .post-navigation a,
 .image-navigation a {
-	color: #2b2b2b;
+	color: #4F4F4F;
 	display: block;
 	font-size: 14px;
 	font-weight: 700;
@@ -1362,7 +1362,7 @@ code {
 }
 
 .paging-navigation a {
-	color: #2b2b2b;
+	color: #4F4F4F;
 }
 
 .paging-navigation .page-numbers.current {
@@ -1371,7 +1371,7 @@ code {
 
 .paging-navigation a:hover {
 	border-top: 5px solid #41a62a;
-	color: #2b2b2b;
+	color: #4F4F4F;
 }
 
 
@@ -1586,7 +1586,7 @@ code {
 }
 
 .comment-author a {
-	color: #2b2b2b;
+	color: #4F4F4F;
 }
 
 .comment-list .trackback a,
@@ -1749,7 +1749,7 @@ code {
 }
 
 .comment-reply-title small a {
-	color: #2b2b2b;
+	color: #4F4F4F;
 	float: right;
 	height: 24px;
 	overflow: hidden;
@@ -2290,7 +2290,7 @@ code {
 @media print {
 	body {
 		background: none !important; /* Brute force since user agents all print differently. */
-		color: #2b2b2b;
+		color: #4F4F4F;
 		font-size: 12pt;
 	}
 
@@ -2334,7 +2334,7 @@ code {
 	.entry-meta a,
 	.featured-content .hentry,
 	.featured-content a {
-		color: #2b2b2b;
+		color: #4F4F4F;
 	}
 
 	.entry-content a,
