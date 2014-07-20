@@ -1818,9 +1818,8 @@ code {
 	color: #6A6A68;
 }
 
-.blog-categories-list li:hover {
+.blog-categories-list li a:hover {
 	color: #FFF;
-	cursor: pointer;
 }
 
 
