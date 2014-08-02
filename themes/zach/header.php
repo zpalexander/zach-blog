@@ -25,10 +25,6 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
-	<script>
-	// Inline header script
-	!function(a){var b=function(){a(".site-navigation ul").is(":visible")?(a(".site-navigation ul").hide(),a(".social-media-container").hide()):(a(".site-navigation ul").show(),a(".social-media-container").show())},c=function(){var b=a(window).width();b>730&&!a(".site-navigation ul").is(":visible")&&a(".site-navigation ul").show(),a(".social-media-container").show(),730>b&&a(".site-navigation ul").is(":visible")&&a(".site-navigation ul").hide(),a(".social-media-container").hide()};a(window).load(function(){a(".header-hamburger").click(b),a(window).resize(c)})}(jQuery);
-	</script>
 	<?php wp_head(); ?>
 </head>
 

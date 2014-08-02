@@ -30,7 +30,7 @@ function zach_scripts_styles() {
 	// Enqueue main stylesheet
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . "/style.css");
 	// Enqueue header script on all pages
-	// wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/minified/nav.min.js", array( 'jquery' ) );
+	wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/minified/nav.min.js", array( 'jquery' ) );
 
 	if ( is_front_page() ) {
 		wp_enqueue_script( 'home', get_template_directory_uri() . "/js/minified/home.min.js", array( 'jquery' ) );
