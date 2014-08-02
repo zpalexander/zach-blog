@@ -638,11 +638,8 @@ span > object {
   content: "\f419";
   margin-top: 16px; }
 
-/*
- * Styles for the homepage
- */
 /**
-* Home Page
+* Front Page Styles
 *-------------------------------------------------------------------------------
 */
 .home {
@@ -652,58 +649,51 @@ span > object {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-
-.home #page {
-  background-color: transparent; }
-
-.home .sidebar {
-  display: none; }
-
-.home .social-media-container {
-  display: none;
-  position: fixed;
-  top: 226px;
-  left: 0;
-  background: #121212;
-  width: 300px;
-  border-top: solid 2px #232323; }
-
-.home .social-media-container li {
-  display: inline; }
-
-.home .social-media-container li:first-child {
-  margin-left: 10px; }
-
-.home .social-media-link {
-  display: none;
-  opacity: .5;
-  width: 30px;
-  padding: 10px; }
-
-.home .social-media-link:hover {
-  opacity: 1; }
-
-@media screen and (min-width: 730px) {
+  .home #page {
+    background-color: transparent; }
+  .home .sidebar {
+    display: none; }
   .home .social-media-container {
-    display: block;
-    top: 56px;
-    bottom: 0;
-    right: 0;
-    left: auto;
-    border: none;
-    background: none;
-    width: auto; }
-
-  .home .social-media-container li {
-    margin: 30% 0 30% 0;
-    display: block; }
-
-  .home .social-media-container li:first-child {
-    margin: 30% 0 30% 0; }
-
+    display: none;
+    position: fixed;
+    top: 226px;
+    left: 0;
+    background: #121212;
+    width: 300px;
+    border-top: solid 2px #232323; }
+    @media screen and (min-width: 730px) {
+      .home .social-media-container {
+        display: block;
+        top: 56px;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        border: none;
+        background: none;
+        width: auto; } }
+    .home .social-media-container li {
+      display: inline; }
+      @media screen and (min-width: 730px) {
+        .home .social-media-container li {
+          margin: 30% 0 30% 0;
+          display: block; } }
+      .home .social-media-container li:first-child {
+        margin-left: 10px; }
+        @media screen and (min-width: 730px) {
+          .home .social-media-container li:first-child {
+            margin: 30% 0 30% 0; } }
   .home .social-media-link {
+    display: none;
     opacity: .5;
-    width: auto; } }
+    width: 30px;
+    padding: 10px; }
+    @media screen and (min-width: 730px) {
+      .home .social-media-link {
+        opacity: .5;
+        width: auto; } }
+    .home .social-media-link:hover {
+      opacity: 1; }
+
 /*
  * Styles for the blog
  */
@@ -1054,11 +1044,8 @@ code {
 @media screen and (min-width: 980px) {
   .photo {
     width: 31%; } }
-/*
- * Styles for the about page
- */
 /**
-* 8.0  About
+* About Page Styles
 * -----------------------------------------------------------------------------
 */
 .about-content {
