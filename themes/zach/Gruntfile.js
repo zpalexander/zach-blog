@@ -13,10 +13,26 @@ module.exports = function(grunt) {
 				files: 'sass/partials/*.scss',
 				tasks: ['sass']
 			}
+		},
+		uglify: {
+			options: {
+				banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+			},
+			dist: {
+				files: {
+					'js/minified/about.min.js' : ['js/custom/about.js'],
+					'js/minified/blog.min.js'  : ['js/custom/blog.js'],
+					'js/minified/home.min.js'  : ['js/custom/home.js'],
+					'js/minified/nav.min.js'   : ['js/custom/nav.js'],
+					'js/minified/photos.min.js': ['js/custom/photos.js'],
+					'js/minified/single.min.js': ['js/custom/single.js']
+				}
+			}
 		}
 	});
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.registerTask('default',['watch']);
+	grunt.registerTask('js', ['uglify']);
 }
