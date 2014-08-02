@@ -44,7 +44,6 @@ function zach_scripts_styles() {
 	}
 
 	if ( is_page( 'about' ) ) {
-		wp_enqueue_script( 'visible', get_template_directory_uri() . "/js/contrib/jquery.visible.js", array( 'jquery' ) );
 		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/custom/about.js", array( 'jquery', 'jcarousel', 'visible' ) );
 	}
 
