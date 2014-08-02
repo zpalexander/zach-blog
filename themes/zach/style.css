@@ -885,7 +885,7 @@ code {
   .blog-post-teaser-container h2 {
     text-align: left; } }
 /**
- * 7.0 Sidebars
+ * Sidebar Styles
  * -----------------------------------------------------------------------------
  */
 .sidebar {
@@ -909,11 +909,11 @@ code {
   font-family: Futura;
   text-transform: uppercase; }
 
-.blog-categories-list li:hover {
-  color: white;
-  cursor: pointer; }
 .blog-categories-list li a {
   color: #6A6A68; }
+  .blog-categories-list li a:hover {
+    color: white;
+    cursor: pointer; }
 
 /*
  * Styles for the photo gallery

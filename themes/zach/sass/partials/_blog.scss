@@ -240,7 +240,7 @@ code {
 
 
 /**
- * 7.0 Sidebars
+ * Sidebar Styles
  * -----------------------------------------------------------------------------
  */
 
@@ -269,11 +269,11 @@ code {
 }
 
 .blog-categories-list li {
-	&:hover {
-		color: white;
-		cursor: pointer;
-	}
 	a {
-	color: #6A6A68;
+		color: #6A6A68;
+		&:hover {
+			color: white;
+			cursor: pointer;
+		}
 	}
 }
