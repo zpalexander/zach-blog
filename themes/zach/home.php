@@ -20,7 +20,7 @@ get_header(); ?>
 		?>
 		<div class="blog-post-teaser-container">
 
-			<div class="clearfix">
+			<div class="blog-post-teaser-info">
 				<a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
 				<span class="blog-teaser-date"><?php echo get_the_date(); ?></span>
 				<a href="<?php the_permalink() ?>">

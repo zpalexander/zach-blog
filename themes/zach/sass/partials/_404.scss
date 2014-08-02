@@ -1,0 +1,36 @@
+/*
+ * Styles for the 404 page
+ */
+
+ /**
+ * 6.11 404 Page
+ * -----------------------------------------------------------------------------
+ */
+
+.error404 .page-content {
+	padding-top: 0;
+}
+
+.error404 .page-content .search-form {
+	margin-bottom: 24px;
+}
+
+
+@media screen and (min-width: 401px) {
+	.error404 .page-content {
+		margin: 20% auto 0 auto;
+	}
+
+	.error404 p {
+		color: #FFF;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.error404 .page-header {
+		border-bottom: 0;
+		margin: 0 auto 24px;
+		padding: 0 10px;
+	}
+}

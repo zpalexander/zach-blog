@@ -1,0 +1,106 @@
+/*
+ * Styles for the photo gallery
+ */
+
+ /**
+ * 7.0 Photo
+ * -----------------------------------------------------------------------------
+ */
+
+
+/* Photo */
+.photo-content {
+	width: 80%;
+	margin: 60px auto 0!important;
+	background: #6A6A68;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #6A6A68;
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+}
+
+
+ .photo {
+	position: relative;
+	display: none;
+	width: auto;
+	margin: 1% .5% 1% .5%;
+	cursor: pointer;
+	border-style: solid;
+	border-width: 4px;
+	border-color: #121212;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+ .photo .photo-info {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.8);
+	color: #FFFFFF;
+	font-family: Futura;
+	font-size: .75em;
+}
+
+ .photo .photo-info h4 {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+ .photo .photo-info .photo-thumb-date {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+}
+
+ .photo .photo-info .photo-thumb-location {
+	position: absolute;
+	bottom: 5px;
+	left: 10px;
+	text-transform: uppercase;
+}
+
+ .photo img {
+	width: 100%;
+	height: auto;
+}
+
+.fullscreen-photo {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding-top: 20px;
+	overflow: visible;
+	z-index: 100;
+	background: #121212;
+	cursor: pointer;
+}
+
+.fullscreen-photo img {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+
+@media screen and (min-width: 980px) {
+	.photo {
+		width: 31%;
+	}
+}

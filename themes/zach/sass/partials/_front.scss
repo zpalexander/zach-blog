@@ -1,0 +1,92 @@
+/*
+ * Styles for the homepage
+ */
+
+ /**
+ * Home Page
+ *-------------------------------------------------------------------------------
+ */
+
+ .home {
+	display: none;
+	background: url('images/homepage.jpg') no-repeat center top fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+ }
+
+ .home #page {
+	background-color: transparent;
+ }
+
+ .home .sidebar {
+	display: none;
+ }
+
+ .home .social-media-container {
+	display: none;
+	position: fixed;
+	top: 226px;
+	left: 0;
+	background: #121212;
+	width: 300px;
+	border-top: solid 2px #232323;
+ }
+
+ .home .social-media-container li {
+	display: inline;
+ }
+
+ .home .social-media-container li:first-child {
+	margin-left: 10px;
+ }
+
+ .home .social-media-link {
+	display: none;
+	opacity: .5;
+	width: 30px;
+	padding: 10px;
+ }
+
+ .home .social-media-link:hover {
+	opacity: 1;
+ }
+
+ .home .twitter {
+ }
+
+ .home .linkedin {
+ }
+
+ .home .email {
+ }
+
+
+
+ @media screen and (min-width: 730px) {
+.home .social-media-container {
+		display: block;
+		top: 56px;
+		bottom: 0;
+		right: 0;
+		left: auto;
+		border: none;
+		background: none;
+		width: auto;
+	 }
+
+	 .home .social-media-container li {
+		margin: 30% 0 30% 0;
+		display: block;
+	 }
+
+	 .home .social-media-container li:first-child {
+	 	margin: 30% 0 30% 0;
+	 }
+
+	 .home .social-media-link {
+		opacity: .5;
+		width: auto;
+	 }
+}

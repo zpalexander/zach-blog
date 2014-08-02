@@ -1,0 +1,23 @@
+/*
+Theme Name: Zach Alexander
+Author: Zach Alexander
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+This theme, like WordPress, is licensed under the GPL.
+*/
+
+/* Global styles */
+@import "normalize";
+@import "init";
+@import "mixins";
+
+/* Partials */
+@import "partials/header";
+@import "partials/front";
+@import "partials/blog";
+@import "partials/photos";
+@import "partials/about";
+@import "partials/404";
+@import "partials/footer";

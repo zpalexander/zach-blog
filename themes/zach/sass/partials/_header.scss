@@ -1,0 +1,243 @@
+/*
+ * Styles for the header
+ */
+
+ /**
+ * 4.0 Header
+ * -----------------------------------------------------------------------------
+ */
+
+/* Ensure that there is no gap between the header and
+	 the admin bar for WordPress versions before 3.8. */
+#wpadminbar {
+	min-height: 32px;
+}
+
+#site-header {
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+.site-header {
+	background-color: #121212;
+	position: fixed;
+	width: 100%;
+	height: 57px;
+	z-index: 4;
+	text-transform: uppercase;
+}
+
+.header-main {
+	min-height: 48px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.header-hamburger {
+	height: 55px;
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.site-title {
+	float: left;
+	font-size: 1.5em;
+	font-weight: 700;
+	position: relative;
+	margin-top: 11px;
+}
+
+.site-title a,
+.site-title a:hover {
+	color: #fff;
+}
+
+/* Search in the header */
+
+.search-toggle {
+	background-color: #24890d;
+	cursor: pointer;
+	float: right;
+	height: 48px;
+	margin-right: 38px;
+	text-align: center;
+	width: 48px;
+}
+
+.search-toggle:hover,
+.search-toggle.active {
+	background-color: #41a62a;
+}
+
+.search-toggle:before {
+	color: #fff;
+	content: "\f400";
+	font-size: 20px;
+	margin-top: 14px;
+}
+
+.search-toggle .screen-reader-text {
+	left: 5px; /* Avoid a horizontal scrollbar when the site has a long menu */
+}
+
+.search-box-wrapper {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	position: absolute;
+	top: 48px;
+	right: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.search-box {
+	background-color: #41a62a;
+	padding: 12px;
+}
+
+.search-box .search-field {
+	background-color: #fff;
+	border: 0;
+	float: right;
+	font-size: 16px;
+	padding: 2px 2px 3px 6px;
+	width: 100%;
+}
+
+
+/**
+ * 5.0 Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.site-navigation ul {
+	display: none;
+	list-style: none;
+	position: absolute;
+	top: 56px;
+	left: 0;
+	width: 300px;
+}
+
+.site-navigation li {
+	padding: 15px 20px;
+	font-size: 1.2em;
+	cursor: pointer;
+	display: block;
+	background: #121212;
+	width: auto;
+	border-top: solid 2px #232323;
+}
+
+.site-navigation li:hover {
+	color: #FFF;
+}
+
+ul li.active-nav {
+	color: #FFF;
+}
+
+
+/* Primary Navigation */
+
+.primary-navigation {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+	font-size: 14px;
+}
+
+.primary-navigation.toggled-on {
+	padding: 72px 0 36px;
+}
+
+.primary-navigation .nav-menu {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	display: none;
+}
+
+.primary-navigation.toggled-on .nav-menu {
+	display: block;
+}
+
+.primary-navigation a {
+	padding: 7px 0;
+	color: #4F4F4F;
+}
+
+/* Secondary Navigation */
+
+.secondary-navigation {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 12px;
+	margin: 48px 0;
+}
+
+.secondary-navigation a {
+	padding: 9px 0;
+}
+
+.menu-toggle {
+	cursor: pointer;
+	font-size: 0;
+	height: 48px;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	width: 48px;
+}
+
+.menu-toggle:before {
+	color: #fff;
+	content: "\f419";
+	margin-top: 16px;
+}
+
+
+@media screen and (min-width: 730px) {
+	.site-navigation ul {
+		display: inline;
+		margin-top: 3px;
+		float: right;
+		height: 100%;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+	}
+
+	.site-navigation li {
+		display: inline-block;
+		background: none;
+		width: auto;
+		border: none;
+	}
+
+	.site-navigation li:hover {
+		padding: 15px 20px;
+		border: none;
+		color: #FFF;
+	}
+
+	ul li.active-nav {
+		border-bottom: 5px solid #FFF;
+		border-right: none;
+		padding: 10px 20px;
+		color: #FFF;
+	}
+
+	ul li.active-nav:hover {
+		border-bottom: 5px solid #FFF;
+		padding-bottom: 10px;
+	}
+
+	.header-hamburger {
+		display: none;
+	}
+}
