@@ -1,14 +1,11 @@
-/*
- * Styles for the header
- */
-
  /**
- * 4.0 Header
+ * Header Styles
  * -----------------------------------------------------------------------------
  */
 
 /* Ensure that there is no gap between the header and
-	 the admin bar for WordPress versions before 3.8. */
+ * the admin bar for WordPress versions before 3.8.
+ */
 #wpadminbar {
 	min-height: 32px;
 }
@@ -39,6 +36,9 @@
 	float: left;
 	margin-right: 10px;
 	cursor: pointer;
+	@media screen and (min-width: 730px) {
+		display: none;
+	}
 }
 
 .site-title {
@@ -47,72 +47,12 @@
 	font-weight: 700;
 	position: relative;
 	margin-top: 11px;
+	a, a:hover {
+		color: white;
+	}
 }
 
-.site-title a,
-.site-title a:hover {
-	color: #fff;
-}
-
-/* Search in the header */
-
-.search-toggle {
-	background-color: #24890d;
-	cursor: pointer;
-	float: right;
-	height: 48px;
-	margin-right: 38px;
-	text-align: center;
-	width: 48px;
-}
-
-.search-toggle:hover,
-.search-toggle.active {
-	background-color: #41a62a;
-}
-
-.search-toggle:before {
-	color: #fff;
-	content: "\f400";
-	font-size: 20px;
-	margin-top: 14px;
-}
-
-.search-toggle .screen-reader-text {
-	left: 5px; /* Avoid a horizontal scrollbar when the site has a long menu */
-}
-
-.search-box-wrapper {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing:    border-box;
-	box-sizing:         border-box;
-	position: absolute;
-	top: 48px;
-	right: 0;
-	width: 100%;
-	z-index: 2;
-}
-
-.search-box {
-	background-color: #41a62a;
-	padding: 12px;
-}
-
-.search-box .search-field {
-	background-color: #fff;
-	border: 0;
-	float: right;
-	font-size: 16px;
-	padding: 2px 2px 3px 6px;
-	width: 100%;
-}
-
-
-/**
- * 5.0 Navigation
- * -----------------------------------------------------------------------------
- */
-
+/* Navigation */
 .site-navigation ul {
 	display: none;
 	list-style: none;
@@ -120,53 +60,77 @@
 	top: 56px;
 	left: 0;
 	width: 300px;
-}
-
-.site-navigation li {
-	padding: 15px 20px;
-	font-size: 1.2em;
-	cursor: pointer;
-	display: block;
-	background: #121212;
-	width: auto;
-	border-top: solid 2px #232323;
-}
-
-.site-navigation li:hover {
-	color: #FFF;
-}
-
-ul li.active-nav {
-	color: #FFF;
+	@media screen and (min-width: 730px) {
+		display: inline;
+		margin-top: 3px;
+		float: right;
+		height: 100%;
+		position: relative;
+		top: auto;
+		left: auto;
+		width: auto;
+	}
+	li {
+		padding: 15px 20px;
+		font-size: 1.2em;
+		cursor: pointer;
+		display: block;
+		background: #121212;
+		width: auto;
+		border-top: solid 2px #232323;
+		@media screen and (min-width: 730px) {
+			display: inline-block;
+			background: none;
+			width: auto;
+			border: none;
+			&:hover {
+				padding: 15px 20px;
+				border: none;
+				color: #FFF;
+			}
+			&.active-nav {
+				border-bottom: 5px solid #FFF;
+				border-right: none;
+				padding: 10px 20px;
+				color: #FFF;
+			}
+			&.active-nav:hover {
+				border-bottom: 5px solid #FFF;
+				padding-bottom: 10px;
+			}
+		}
+		&:hover {
+			color: white;
+		}
+		&.active-nav {
+			color: white;
+		}
+	}
 }
 
 
 /* Primary Navigation */
-
 .primary-navigation {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing:    border-box;
 	box-sizing:         border-box;
 	font-size: 14px;
+	a {
+		padding: 7px 0;
+		color: #4F4F4F;
+	}
+	.nav-menu {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		display: none;
+	}
 }
-
 .primary-navigation.toggled-on {
 	padding: 72px 0 36px;
 }
-
-.primary-navigation .nav-menu {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-	display: none;
-}
-
 .primary-navigation.toggled-on .nav-menu {
 	display: block;
 }
 
-.primary-navigation a {
-	padding: 7px 0;
-	color: #4F4F4F;
-}
 
 /* Secondary Navigation */
 
@@ -199,45 +163,3 @@ ul li.active-nav {
 	margin-top: 16px;
 }
 
-
-@media screen and (min-width: 730px) {
-	.site-navigation ul {
-		display: inline;
-		margin-top: 3px;
-		float: right;
-		height: 100%;
-		position: relative;
-		top: auto;
-		left: auto;
-		width: auto;
-	}
-
-	.site-navigation li {
-		display: inline-block;
-		background: none;
-		width: auto;
-		border: none;
-	}
-
-	.site-navigation li:hover {
-		padding: 15px 20px;
-		border: none;
-		color: #FFF;
-	}
-
-	ul li.active-nav {
-		border-bottom: 5px solid #FFF;
-		border-right: none;
-		padding: 10px 20px;
-		color: #FFF;
-	}
-
-	ul li.active-nav:hover {
-		border-bottom: 5px solid #FFF;
-		padding-bottom: 10px;
-	}
-
-	.header-hamburger {
-		display: none;
-	}
-}

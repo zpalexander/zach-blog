@@ -1,7 +1,12 @@
-/*
- * Initializing styles for the site
+/**
+ * Init Styles
+ * -----------------------------------------------------------------------------
  */
 
+
+/*************/
+/*** Fonts ***/
+/*************/
 /* Museo Slab */
 @font-face {
 	font-family: 'MuseoSlab';
@@ -10,54 +15,39 @@
 	url('../fonts/museo-slab/museo-slab.woff') format('woff'),
 	url('../fonts/museo-slab/museo-slab.ttf') format('truetype');
 }
-
-
-
 /* Futura */
 @font-face {
 	font-family: 'Futura';
 	src: url('../fonts/futura/Futura-CondensedMedium.ttf') format('ttf');
 }
-
-
-
 /* Noto */
  @font-face {
 	font-family: 'Noto';
 	src: url('../fonts/noto-sans/NotoSans-Italic.ttf') format('ttf');
 }
 
-/**
- * 3.0 Basic Structure
- * -----------------------------------------------------------------------------
- */
 
+/************************/
+/* Basic Site Structure */
+/************************/
 .site {
 	background-color: #121212;
 	position: relative;
 }
-
 .main-content {
 	width: 100%;
 }
 
 
 
-/* Responsive images. Fluid images for posts, comments, and widgets */
-
-.entry-content img,
-.entry-summary img,
-#site-header img,
-.widget img,
-.wp-caption {
-	max-width: 100%;
-}
+/**************************/
+/*** WordPress Specific ***/
+/**************************/
 
 /**
  * Make sure images with WordPress-added height and width attributes are
  * scaled correctly.
  */
-
 .comment-content img[height],
 .entry-content img,
 .entry-summary img,
@@ -67,7 +57,6 @@ img[class*="attachment-"],
 #site-header img {
 	height: auto;
 }
-
 img.size-full,
 img.size-large,
 .wp-post-image,
@@ -76,9 +65,18 @@ img.size-large,
 	max-width: 100%;
 }
 
-
+/**********************/
+/*** Responsiveness ***/
+/**********************/
+/* Responsive images. Fluid images for posts, comments, and widgets */
+.entry-content img,
+.entry-summary img,
+#site-header img,
+.widget img,
+.wp-caption {
+	max-width: 100%;
+}
 /* Make sure embeds and iframes fit their containers */
-
 embed,
 iframe,
 object,
@@ -86,7 +84,6 @@ video {
 	margin-bottom: 24px;
 	max-width: 100%;
 }
-
 p > embed,
 p > iframe,
 p > object,
@@ -95,14 +92,28 @@ span > iframe,
 span > object {
 	margin-bottom: 0;
 }
+/* Does the same thing as <meta name="viewport" content="width=device-width">,
+ * but in the future W3C standard way. -ms- prefix is required for IE10+ to
+ * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
+ * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
+ */
+@-ms-viewport {
+	width: device-width;
+}
 
+@viewport {
+	width: device-width;
+}
+
+
+/*********************/
+/*** Accessibility ***/
+/*********************/
 /* Assistive text */
-
 .screen-reader-text {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute;
 }
-
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
@@ -123,22 +134,7 @@ span > object {
 	width: auto;
 	z-index: 100000; /* Above WP toolbar */
 }
-
 .hide {
 	display: none;
 }
 
-
-
-/* Does the same thing as <meta name="viewport" content="width=device-width">,
- * but in the future W3C standard way. -ms- prefix is required for IE10+ to
- * render responsive styling in Windows 8 "snapped" views; IE10+ does not honor
- * the meta tag. See http://core.trac.wordpress.org/ticket/25888.
- */
-@-ms-viewport {
-	width: device-width;
-}
-
-@viewport {
-	width: device-width;
-}
