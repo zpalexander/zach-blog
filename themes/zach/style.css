@@ -30,7 +30,6 @@ This theme, like WordPress, is licensed under the GPL.
  */
 
  /* Museo Slab */
-@import url("//hello.myfonts.net/count/2adf13");
 @font-face {
 	font-family: 'MuseoSlab';
 	src: url('../fonts/museo-slab/museo-slab.eot');
