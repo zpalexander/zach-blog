@@ -706,6 +706,9 @@ span > object {
 
 .blog-page-content {
   margin: 0 5% 0 !important; }
+  @media screen and (min-width: 985px) {
+    .blog-page-content {
+      margin: 0 2% 0% 22% !important; } }
 
 .blog-post-teaser-container {
   display: none;
@@ -813,6 +816,10 @@ code {
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px; }
+  @media screen and (min-width: 985px) {
+    .blog-post-wrapper {
+      margin: 0 0 10px 27.5%;
+      width: 60%; } }
   .blog-post-wrapper h1 {
     text-align: center;
     margin-bottom: 0;
@@ -890,6 +897,9 @@ code {
   height: 100%;
   width: 20%;
   bottom: 0; }
+  @media screen and (min-width: 985px) {
+    .sidebar {
+      display: block; } }
 
 .sidebar-content {
   margin-left: 30px;
@@ -897,26 +907,14 @@ code {
 
 .blog-categories-header {
   font-family: Futura;
-  font-size: 1.5em;
   text-transform: uppercase; }
 
+.blog-categories-list li:hover {
+  color: white;
+  cursor: pointer; }
 .blog-categories-list li a {
   color: #6A6A68; }
 
-.blog-categories-list li:hover {
-  color: #FFF;
-  cursor: pointer; }
-
-@media screen and (min-width: 985px) {
-  .sidebar {
-    display: block; }
-
-  .blog-page-content {
-    margin: 0 2% 0% 22% !important; }
-
-  .blog-post-wrapper {
-    margin: 0 0  10px 27.5%;
-    width: 60%; } }
 /*
  * Styles for the photo gallery
  */
@@ -1059,31 +1057,26 @@ code {
         color: white;
         background-color: #232323; }
 
-/*
- * Styles for the 404 page
- */
 /**
-* 6.11 404 Page
+* 404 Page Styles
 * -----------------------------------------------------------------------------
 */
-.error404 .page-content {
-  padding-top: 0; }
-
-.error404 .page-content .search-form {
-  margin-bottom: 24px; }
-
-@media screen and (min-width: 401px) {
-  .error404 .page-content {
-    margin: 20% auto 0 auto; }
-
-  .error404 p {
-    color: #FFF;
-    text-align: center; } }
 @media screen and (max-width: 400px) {
   .error404 .page-header {
     border-bottom: 0;
     margin: 0 auto 24px;
     padding: 0 10px; } }
+.error404 .page-content {
+  padding-top: 0; }
+  @media screen and (min-width: 401px) {
+    .error404 .page-content {
+      margin: 20% auto 0; }
+      .error404 .page-content p {
+        color: white;
+        text-align: center; } }
+  .error404 .page-content .search-form {
+    margin-bottom: 25px; }
+
 /**
 * Footer Styles
 * -----------------------------------------------------------------------------

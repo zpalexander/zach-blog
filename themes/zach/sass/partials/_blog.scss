@@ -14,7 +14,10 @@
 }
 
 .blog-page-content {
-	margin: 0 5% 0 !important;
+	margin: 0 5% 0!important;
+	@media screen and (min-width: 985px) {
+		margin: 0 2% 0% 22%!important;
+	}
 }
 
 .blog-post-teaser-container {
@@ -140,6 +143,10 @@ code {
 	border-radius: 20px;
 	-moz-border-radius: 20px;
 	-webkit-border-radius: 20px;
+	@media screen and (min-width: 985px) {
+		margin: 0 0 10px 27.5%;
+		width: 60%;
+	}
 	h1 {
 		text-align: center;
 		margin-bottom: 0;
@@ -246,6 +253,9 @@ code {
 	height: 100%;
 	width: 20%;
 	bottom: 0;
+	@media screen and (min-width: 985px) {
+		display: block;
+	}
 }
 
 .sidebar-content {
@@ -255,37 +265,15 @@ code {
 
 .blog-categories-header {
 	font-family: Futura;
-	font-size: 1.5em;
 	text-transform: uppercase;
 }
 
-.blog-categories-list li a {
+.blog-categories-list li {
+	&:hover {
+		color: white;
+		cursor: pointer;
+	}
+	a {
 	color: #6A6A68;
-}
-
-.blog-categories-list li:hover {
-	color: #FFF;
-	cursor: pointer;
-}
-
-
-
-
-
-@media screen and (min-width: 985px) {
-	.sidebar {
-		display: block;
 	}
-
-
-	.blog-page-content {
-		margin: 0 2% 0% 22% !important;
-	}
-
-	.blog-post-wrapper {
-		margin: 0 0  10px 27.5%;
-		width: 60%;
-
-	}
-
 }
