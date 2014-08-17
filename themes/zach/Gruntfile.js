@@ -28,7 +28,8 @@ module.exports = function(grunt) {
 					'js/minified/home.min.js'  : ['js/custom/home.js'],
 					'js/minified/nav.min.js'   : ['js/custom/nav.js'],
 					'js/minified/photos.min.js': ['js/custom/photos.js'],
-					'js/minified/single.min.js': ['js/custom/single.js']
+					'js/minified/single.min.js': ['js/custom/single.js'],
+					'js/minified/jquery.lazyload.min.js' : ['js/contrib/jquery.lazyload.js']
 				}
 			}
 		}

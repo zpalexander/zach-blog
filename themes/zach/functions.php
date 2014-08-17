@@ -51,6 +51,7 @@ function zach_scripts_styles() {
 
 	if ( is_single() ) {
 		wp_enqueue_script( 'single', get_template_directory_uri() . "/js/minified/single.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'lazyload', get_template_directory_uri() . "/js/minified/jquery.lazyload.min.js", array('jquery') );
 	}
 }
 
