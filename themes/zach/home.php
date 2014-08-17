@@ -12,10 +12,8 @@ get_header(); ?>
 		<div id="content" class="blog-page-content" role="main">
 
 		<?php
-			$category = isset($_GET['cat']) ? $_GET['cat'] : NULL;
-			$the_query = blog_posts_query($category);
+			$the_query = blog_posts_query();
 			if ( $the_query->have_posts() ) :
-				// Start the Loop.
 				while ( $the_query->have_posts() ) : $the_query->the_post();
 		?>
 		<div class="blog-post-teaser-container">
@@ -24,33 +22,24 @@ get_header(); ?>
 				<a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
 				<span class="blog-teaser-date"><?php echo get_the_date(); ?></span>
 				<a href="<?php the_permalink() ?>">
-				<img class="blog-teaser-image"
-					src="<?php $id = get_the_ID();
-					echo get_post_meta($id, '_zach_post_image', TRUE); ?>"
-				>
+					<img class="blog-teaser-image" src="<?php print blog_post_image(get_the_ID()); ?>">
 				</a>
 				<div class="blog-teaser-text">
-				<?php
-					$content = get_the_content();
-					$content_limited = substr($content, 0, 500) . '<a href="' . get_permalink() . '">.....</a>';
-					echo $content_limited;
-				?>
+					<?php print blog_posts_blurb(get_the_content(), get_permalink()); ?>
 				</div>
 			</div>
-			<?php
-			$categories = wp_get_post_categories(get_the_ID());
-			if ( $categories[0] != 'Uncategorized' ) {
-				echo '<p class="blog-teaser-tags">';
-					echo '<img src="' . get_stylesheet_directory_uri() . '/images/tag-icon.png ?>">';
-					foreach ( $categories as $category ) {
-						$link = get_site_url() . '/blog?cat=' . $category;
-						echo "<a href='$link' >";
-						echo '<span class="blog-post-category">' . get_category($category)->name . '</span>';
-						echo "</a>";
-					}
-				echo '</p>';
-			}
-			?>
+
+			<?php $categories = blog_post_categories(get_the_ID()); ?>
+			<?php if ($categories): ?>
+				<p class="blog-teaser-tags">
+					<img src="<?php print get_stylesheet_directory_uri(); ?>/images/tag-icon.png">
+					<?php foreach ($categories as $category_name => $category_url): ?>
+						<a href="<?php print $category_url; ?>">
+							<span class="blog-post-category"><?php print $category_name; ?></span>
+						</a>
+					<?php endforeach; ?>
+				</p>
+			<?php endif; ?>
 		</div>
 
 		<?php if (!( ($the_query->current_post+1) == $the_query->post_count)) : ?>
