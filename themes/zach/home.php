@@ -22,7 +22,8 @@ get_header(); ?>
 				<a href="<?php the_permalink() ?>"><h2><?php the_title(); ?></h2></a>
 				<span class="blog-teaser-date"><?php echo get_the_date(); ?></span>
 				<a href="<?php the_permalink() ?>">
-					<img class="blog-teaser-image" src="<?php print blog_post_image(get_the_ID()); ?>">
+					<?php the_post_thumbnail( 'blog-thumb' ); ?>
+					<!--<img class="blog-teaser-image" src="<?php //print blog_post_image(get_the_ID()); ?>">-->
 				</a>
 				<div class="blog-teaser-text">
 					<?php print blog_posts_blurb(get_the_content(), get_permalink()); ?>

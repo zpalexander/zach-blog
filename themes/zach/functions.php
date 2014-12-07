@@ -1,6 +1,5 @@
 <?php
 /**
- *
  * @package Zach_Alexander
  */
 
@@ -14,10 +13,15 @@
  require(dirname( __FILE__ ).'/includes/functionality.php');
 
 /**
- *
  * Hide admin bar
  */
 show_admin_bar( false );
+
+/**
+ * Add post thumbnail image support
+ */
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'blog-thumb', 350, 300 );
 
 
 /**

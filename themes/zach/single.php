@@ -17,7 +17,7 @@ get_header(); ?>
 			<div class="blog-post-wrapper">
 				<h1><?php the_title(); ?></h1>
 				<p class="blog-post-date"><?php the_date(); ?></p>
-				<?php 
+				<?php
 					$categories = wp_get_post_categories(get_the_ID());
 					if ( $categories[0] != 'Uncategorized' ) {
 						echo '<p class="blog-tags">';
@@ -31,10 +31,8 @@ get_header(); ?>
 						echo '</p>';
 					}
 				?>
-				<img class="blog-post-image" 
-					src="<?php $id = get_the_ID();
-					echo get_post_meta($id, '_zach_post_image', TRUE); ?>"
-				>
+				<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+				<img class="blog-post-image" src="<?php echo $feat_image ?>">
 				<div class="blog-post-content">
 					<?php the_content(); ?>
 				</div>
