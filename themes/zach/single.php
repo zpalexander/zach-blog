@@ -31,8 +31,7 @@ get_header(); ?>
 						echo '</p>';
 					}
 				?>
-				<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
-				<img class="blog-post-image" src="<?php echo $feat_image ?>">
+				<img class="blog-post-image" src="<?php echo blog_post_image($post->ID) ?>">
 				<div class="blog-post-content">
 					<?php the_content(); ?>
 				</div>

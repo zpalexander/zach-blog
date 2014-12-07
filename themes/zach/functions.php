@@ -86,7 +86,7 @@ function blog_posts_blurb($body, $permalink) {
  * @return [string]     [A permalink to the image]
  */
 function blog_post_image($id) {
-	return get_post_meta($id, '_zach_post_image', TRUE);
+	return wp_get_attachment_url( get_post_thumbnail_id($id) );
 }
 
 /**
