@@ -1,6 +1,11 @@
 # Generated CSS #
 /themes/zach/style.css
+/themes/zach/style.css.map
+/themes/zach/.sass-cache/
 
 # Generated JavaScript #
 /themes/zach/js/minified/*.js
+
+# Uploaded Files #
+/uploads/*
 
