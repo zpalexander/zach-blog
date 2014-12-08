@@ -3,7 +3,7 @@
 add_action( 'init', 'create_photo_post_type' );
 /**
  * Register Custom Post Types
- * 
+ *
  */
 function create_photo_post_type() {
 	register_post_type( 'photo',
@@ -65,24 +65,6 @@ add_filter( 'cmb_meta_boxes', 'zach_metaboxes' );
 function zach_metaboxes( array $meta_boxes ) {
 
 	$prefix = '_zach_';
-
-	$meta_boxes['post_image_metabox'] = array(
-		'id' => 'post_image_metabox',
-		'title' => __( 'Post Image', 'cmb' ),
-		'pages' => array( 'post', ), // Post type
-		'context' => 'normal',
-		'priority' => 'high',
-		'show_names' => true, // Show field names on the left
-		// 'cmb_styles' => true, // Enqueue the CMB stylesheet on the frontend
-		'fields' => array(
-			array(
-				'name' 	=> __( "Put 'er here", 'cmb' ),
-				'desc' 	=> __( '', 'cmb' ),
-				'id' 	=> $prefix . 'post_image',
-				'type' 	=> 'file',
-			)
-		)
-	);
 
 	$meta_boxes['photo_image_metabox'] = array(
 		'id' => 'photo_image_metabox',
