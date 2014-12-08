@@ -29,6 +29,7 @@ get_header(); ?>
 				<img class="blog-post-image" src="<?php echo blog_post_image($post->ID) ?>">
 				<div class="blog-post-content">
 					<?php the_content(); ?>
+					<?php wp_link_pages(); ?>
 				</div>
 			<?php endwhile; ?>
 		</div><!-- #content -->
