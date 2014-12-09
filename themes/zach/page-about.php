@@ -14,7 +14,7 @@ get_header(); ?>
 				<h2>My name is Zach Alexander</h2>
 				<p class="self-summary">I'm a full-stack web developer</p>
 				<p class="self-summary">I live in Beijing, China</p>
-				<a href="<?php echo esc_url( home_url( 'wp-content/uploads/2014/07/zach-alexander-resume.pdf' ) ); ?>" rel="cv">
+				<a href="<?php echo esc_url( home_url( 'wp-content/themes/zach/images/zach-alexander-resume.pdf' ) ); ?>" rel="cv">
 					<div class="download-cv-button">Download My CV</div>
 				</a>
 			</div>
