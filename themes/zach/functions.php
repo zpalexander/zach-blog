@@ -66,7 +66,13 @@ function zach_scripts_styles() {
  */
 function blog_posts_query() {
 	$filter = isset($_GET['cat']) ? $_GET['cat'] : NULL;
-	$query = new WP_Query( "cat=$filter" );
+	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+	$query_args = array(
+		'cat' => $filter,
+		'posts_per_page' => 5,
+		'paged' => $paged
+	);
+	$query = new WP_Query( $query_args );
 	return $query;
 }
 

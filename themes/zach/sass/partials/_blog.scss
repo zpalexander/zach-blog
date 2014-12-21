@@ -18,6 +18,31 @@
 	@media screen and (min-width: 985px) {
 		margin: 0 2% 0% 22%!important;
 	}
+
+	.prev-next-posts {
+		margin: 20px auto 0;
+		padding-bottom: 40px;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		@media screen and (min-width: 730px) {
+			text-align: right;
+			margin-left: 3%;
+			margin-right: auto;
+		}
+
+		a {
+			color: #6A6A68
+			&:hover {
+				color: white;
+			}
+		}
+		.prev-posts-link, .next-posts-link {
+			float: right;
+			margin-right: 15px;
+		}
+	}
+
 }
 
 .blog-post-teaser-container {
