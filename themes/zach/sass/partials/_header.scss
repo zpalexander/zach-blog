@@ -86,16 +86,16 @@
 			&:hover {
 				padding: 15px 20px;
 				border: none;
-				color: #FFF;
+				color: white;
 			}
 			&.active-nav {
-				border-bottom: 5px solid #FFF;
+				border-bottom: 5px solid white;
 				border-right: none;
 				padding: 10px 20px;
-				color: #FFF;
+				color: white;
 			}
 			&.active-nav:hover {
-				border-bottom: 5px solid #FFF;
+				border-bottom: 5px solid white;
 				padding-bottom: 10px;
 			}
 		}

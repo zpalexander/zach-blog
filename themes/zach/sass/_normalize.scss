@@ -72,22 +72,18 @@ body {
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: #6A6A68;
 }
 
 a:focus {
 	outline: thin dotted;
-	color: #FFF
-}
-
-a:hover,
-a:active {
-	outline: 0;
+	color: #07CF00;
 }
 
 a:active,
 a:hover {
-	color: #FFF;
+	outline: 0;
+	color: #07CF00;
 }
 
 h1,

@@ -34,7 +34,7 @@
 		a {
 			color: #6A6A68;
 			&:hover {
-				color: white;
+				color: #07CF00;
 			}
 		}
 		.prev-posts-link, .next-posts-link {
@@ -67,7 +67,7 @@
 		text-transform: uppercase;
 		text-align: center;
 		&:hover {
-			color: #4F4F4F;
+			color: #07CF00;
 		}
 	}
 	p {
@@ -104,6 +104,9 @@
 	}
 	a {
 		color: #6ABED8;
+		&:hover {
+			color: white;
+		}
 	}
 }
 
@@ -136,7 +139,7 @@
 	a {
 		color: white;
 		&:hover {
-			color: #4F4F4F;
+			color: #07CF00;
 		}
 	}
 }
@@ -223,7 +226,7 @@ blockquote {
 	a {
 		color: #6A6A68;
 		&:hover {
-			color: black;
+			color: #07CF00;
 		}
 	}
 	p {
