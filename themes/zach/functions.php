@@ -5,12 +5,12 @@
 
 
 
- /**
-  * Custom metabox setup.
-  *
-  * @since 0.1.0
-  */
- require(dirname( __FILE__ ).'/includes/functionality.php');
+/**
+ * Custom metabox setup.
+ *
+ * @since 0.1.0
+ */
+require(dirname( __FILE__ ).'/includes/functionality.php');
 
 /**
  * Hide admin bar
@@ -22,6 +22,29 @@ show_admin_bar( false );
  */
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'blog-thumb', 350, 300 );
+
+/**
+ * Custom logo on login page ;)
+ */
+// Set the image
+function my_login_logo() {
+    print '<style type="text/css">
+        body.login div#login h1 a {
+            background-image: url(' . get_stylesheet_directory_uri() . '/images/avatar.png);
+            background-size: 100px 100px!important;
+            padding-bottom: 0;
+            width: 100px;
+            height: 100px;
+            background-size: auto auto;
+        }
+    </style>';
+}
+add_action("login_head", "my_login_logo");
+// Point the image URL to my site
+function custom_loginlogo_url($url) {
+	return 'http://zpalexander.com';
+}
+add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 
 
 /**
