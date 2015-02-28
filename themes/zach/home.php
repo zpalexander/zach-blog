@@ -41,11 +41,12 @@ get_header(); ?>
 			<?php endwhile; ?>
 			<!-- pagination here -->
 			<?php if ($the_query->max_num_pages > 1): ?>
-				<?php //echo '<PRE/>'; var_dump($the_query->max_num_pages); die(); ?>
   			<nav class="prev-next-posts">
-    			<div class="prev-posts-link">
-      			<?php print get_next_posts_link( 'Older Entries', $the_query->max_num_pages + 1 ); ?>
-    			</div>
+  				<?php if ($paged < $the_query->max_num_pages): ?>
+    				<div class="prev-posts-link">
+      				<?php print get_next_posts_link( 'Older Entries', $the_query->max_num_pages ); ?>
+    				</div>
+    			<?php endif; ?>
     			<div class="next-posts-link">
       			<?php print get_previous_posts_link( 'Newer Entries' ); ?>
     			</div>

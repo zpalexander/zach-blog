@@ -91,10 +91,12 @@ function blog_posts_query() {
 	$filter = isset($_GET['cat']) ? $_GET['cat'] : NULL;
 	$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
 	$query_args = array(
-		'cat' => $filter,
 		'posts_per_page' => 5,
 		'paged' => $paged
 	);
+	if ($filter) {
+		$query_args['cat'] = $filter;
+	}
 	$query = new WP_Query( $query_args );
 	return $query;
 }
