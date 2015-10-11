@@ -57,28 +57,28 @@ function zach_scripts_styles() {
 	// Enqueue main stylesheet
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . "/style.css");
 	// Enqueue header script on all pages
-	wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/minified/nav.min.js", array( 'jquery' ) );
+	wp_enqueue_script( 'nav', get_template_directory_uri() . "/js/minified/nav.min.js", array( 'jquery' ), null, true);
 
 	if ( is_front_page() ) {
-		wp_enqueue_script( 'home', get_template_directory_uri() . "/js/minified/home.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'home', get_template_directory_uri() . "/js/minified/home.min.js", array( 'jquery' ), null, true );
 	}
 
 	// Enqueue isotope on photos page
 	if ( is_page( 'photos' ) ) {
-		wp_enqueue_script( 'photos', get_template_directory_uri() . "/js/minified/photos.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'photos', get_template_directory_uri() . "/js/minified/photos.min.js", array( 'jquery' ), null, true );
 	}
 
 	if ( is_page( 'about' ) ) {
-		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/minified/about.min.js", array( 'jquery') );
+		wp_enqueue_script( 'about', get_template_directory_uri() . "/js/minified/about.min.js", array( 'jquery'), null, true );
 	}
 
 	if ( is_home() ) {
-		wp_enqueue_script( 'blog', get_template_directory_uri() . "/js/minified/blog.min.js", array( 'jquery' ) );
+		wp_enqueue_script( 'blog', get_template_directory_uri() . "/js/minified/blog.min.js", array( 'jquery' ), null, true );
 	}
 
 	if ( is_single() ) {
-		wp_enqueue_script( 'single', get_template_directory_uri() . "/js/minified/single.min.js", array( 'jquery' ) );
-		wp_enqueue_script( 'lazyload', get_template_directory_uri() . "/js/minified/jquery.lazyload.min.js", array('jquery') );
+		wp_enqueue_script( 'single', get_template_directory_uri() . "/js/minified/single.min.js", array( 'jquery' ), null, true );
+		wp_enqueue_script( 'lazyload', get_template_directory_uri() . "/js/minified/jquery.lazyload.min.js", array('jquery'), null, true );
 	}
 }
 
