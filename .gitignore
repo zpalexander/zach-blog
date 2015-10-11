@@ -9,3 +9,6 @@
 # Uploaded Files #
 /uploads/*
 
+# Dependencies #
+/themes/zach/node_modules/
+
