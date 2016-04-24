@@ -9,8 +9,7 @@
 	}
 
 	$(window).load( function() {
-		$( '.blog-post-teaser-container' ).fadeIn(1000);
-		$( 'hr' ).fadeIn(1000);
+		$( '#content' ).fadeIn(1000);
 		$( '.blog-teaser-image' ).mouseenter( activateTeaserImage ).mouseleave( deactivateTeaserImage );
 	});
 

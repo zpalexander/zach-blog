@@ -4,11 +4,14 @@
  */
 
 .blog {
+	#content {
+		display: none;
+	}
+
 	#primary {
 		background: #232323;
 	}
 	hr {
-		display: none;
 		background-color: #6A6A68;
 	}
 }
@@ -46,7 +49,6 @@
 }
 
 .blog-post-teaser-container {
-	display: none;
 	padding: 40px 30px 20px 30px;
 	margin: 50px 0;
 	background: transparent;
